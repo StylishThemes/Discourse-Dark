@@ -1,0 +1,406 @@
+/* ==UserStyle==
+@name         Discourse Dark
+@namespace    StylishThemes
+@version      1.0.0
+@description  Darken Discourse forums
+@author       StylishThemes
+@homepageURL  https://github.com/StylishThemes/discourse-dark
+@supportURL   https://github.com/StylishThemes/discourse-dark/issues
+@license      CC-BY-SA-4.0
+@var color    my-main-color "Main color" #07c
+@preprocessor uso
+==/UserStyle== */
+@-moz-document domain("discourse.mozilla.org"), domain("discourse.wicg.io"), domain("discuss.atom.io"), domain("discuss.codemirror.net"), domain("forum.freecodecamp.org"), url-prefix("https://www.sitepoint.com/community/"), domain("meta.discourse.org"), domain("talk.commonmark.org") {
+
+  :root {
+    --main-color: var(--my-main-color, /*[[main-color]]*/);
+  }
+
+  body {
+    background: #181818 !important;
+    color: #ddd !important;
+  }
+
+  .d-header .panel,
+  .cat .dropdown-header,
+  .topic-body,
+  .topic-body.highlighted {
+    background: transparent !important;
+  }
+
+  .d-header {
+    background: #111 !important;
+  }
+
+  #reply-control,
+  .bootbox.modal,
+  .topic-list .topic-list-item-separator td span {
+    background: #181818 !important;
+    border-color: #444 !important;
+  }
+
+  code,
+  pre code,
+  p > code,
+  .btn,
+  .message,
+  #reply-control input,
+  #reply-control textarea,
+  #reply-control select,
+  #reply-control .tag-chooser,
+  .badge-notification,
+  .modal-inner-container,
+  .select2-drop,
+  .select-kit-body,
+  .select-kit-header,
+  .select-box-kit-header,
+  .select-kit-collection,
+  .select-box-kit-collection,
+  .select-kit .select-kit-collection,
+  .select-kit-filter,
+  .select-box-kit-filter {
+    background: #222 !important;
+    color: #ddd !important;
+    border-color: #444 !important;
+  }
+
+  blockquote,
+  aside.quote > div,
+  aside.quote > blockquote,
+  a.mention,
+  a.mention-group,
+  .menu-panel,
+  .emoji-picker,
+  .composer-popup,
+  .d-editor .d-editor-modal,
+  .user-menu .notifications li.read,
+  .list-controls .category-dropdown-menu,
+  .select2-results .select2-no-results,
+  .select2-results .select2-searching,
+  .select2-results .select2-selection-limit,
+  .primary, .details, .user-content, .topic-map,
+  .drop-down-visible .d-header-icons .active .icon,
+  .drop-down-visible .d-header .icons .active .icon {
+    background: #222 !important;
+    color: #aaa !important;
+    border-color: #444 !important;
+  }
+
+  .select2-drop-mask,
+  #list-area .contents .topic-list-item:nth-child(2n) {
+    background: rgba(34, 34, 34, .5) !important;
+  }
+
+  li.select-box-kit-row,
+  .menu-panel .category-link:hover,
+  .menu-panel ul.menu-links li a:hover,
+  .menu-panel ul li.heading a:hover {
+    background-color: #333 !important;
+  }
+
+  body .dropdown-header,
+  .topic-map .buttons .btn,
+  .badge-notification.clicks,
+  .d-editor-textarea-wrapper,
+  nav.post-controls button.d-hover,
+  .select2-results .select2-highlighted {
+    background: #333 !important;
+    color: #aaa !important;
+    border-color: #444 !important;
+  }
+
+  .btn:hover,
+  .cat:hover,
+  .d-editor-spacer,
+  .topic-list .sortable:hover,
+  .nav-pills > li > a:hover,
+  .d-header-icons .icon:hover,
+  .d-header .icons .icon:hover,
+  .category-row.is-highlighted,
+  nav.post-controls .show-replies:hover,
+  .drop-down-visible .d-header .icons .icon:hover {
+    background: #444 !important;
+  }
+
+  .emoji-picker .section-group button.emoji:hover,
+  .emoji-picker .results button.emoji:hover {
+    background-color: #444 !important;
+  }
+
+  .discourse-tag.simple,
+  .discourse-tag.simple:hover,
+  .discourse-tag.simple:visited,
+  .modal.history-modal .diff-ins,
+  body .extra-info-wrapper .discourse-tag,
+  .d-header .icons .active .icon:hover,
+  .drop-down-visible .d-header .icons .active .icon:hover,
+  /* syntax theme */
+  .hljs-subst, .hljs-request, .hljs-status,
+  .hljs-keyword, .javascript .hljs-title, .nginx .hljs-title {
+    color: #aaa !important;
+  }
+
+  input,
+  select,
+  textarea,
+  .topic-body .contents .cooked a:not(.mention):not(.mention-group),
+  .topic-body .contents .cooked a:not(.mention):not(.mention-group):active,
+  .topic-body .contents .cooked a:not(.mention):not(.mention-group):hover,
+  .topic-body .contents .cooked a:not(.mention):not(.mention-group):visited,
+  #reply-control .wmd-controls .d-editor-preview a:not(.mention):not(.mention-group),
+  #reply-control .wmd-controls .d-editor-preview a:not(.mention):not(.mention-group):active,
+  #reply-control .wmd-controls .d-editor-preview a:not(.mention):not(.mention-group):hover,
+  #reply-control .wmd-controls .d-editor-preview a:not(.mention):not(.mention-group):visited {
+    color: #ccc; /* not important */
+  }
+
+  .title,
+  .d-icon,
+  .alert,
+  #banner,
+  .topic-count,
+  .alert.alert-info,
+  .alert.alert-success,
+  .alert.alert-error,
+  .nav-pills > li > a,
+  #topic-title h1 a,
+  .is-highlighted div,
+  .modal .modal-body p,
+  .atom-io-navigation a,
+  .composer-popup a.close,
+  .modal .modal-body label,
+  .topic-list .sortable:hover,
+  .extra-info-wrapper .topic-link,
+  nav.post-controls button.create,
+  .user-menu .notifications li span,
+  .badge-wrapper.bullet span.badge-category,
+  .list-controls .category-dropdown-menu .home,
+  .category-list tbody .category h3 a[href],
+
+  /* Fix Mozilla Brazil category text color */
+  .badge-category-bg[style*="background-color: #00683"] + span[style*="color: #000000"] {
+    color: #ccc !important;
+  }
+
+  /* syntax theme */
+  .hljs-tag,
+  .hljs-tag .hljs-title,
+  .django .hljs-tag .hljs-keyword {
+    color: #777 !important;
+  }
+
+  .emoji-picker .diversity-picker .d-icon {
+    color: #333 !important;
+  }
+
+  .menu-panel,
+  .d-header .icons .icon,
+  .drop-down-visible .d-header-icons .active .icon {
+    border-color: transparent !important;
+  }
+
+  .drop-down-visible .d-header-icons .active .icon:after,
+  .drop-down-visible .d-header .icons .active .icon:after {
+    border-color: #222 !important;
+  }
+
+  hr,
+  input,
+  .d-header,
+  .d-header .title,
+  .modal-header,
+  .modal-footer,
+  .topic-avatar,
+  .topic-status-info,
+  .topic-body,
+  .topic-map section,
+  .topic-list > tbody > tr,
+  .nav-pills > li > a,
+  .category-list tbody tr,
+  .small-action,
+  .select-kit-filter,
+  .select-box-kit-filter,
+  .d-editor-button-bar,
+  .table-heading,
+  #revision-details,
+  .emoji-picker .filter,
+  .emoji-picker .section-header,
+  .emoji-picker .categories-column,
+  .emoji-picker .footer,
+  .latest-topic-list-item,
+  .extra-info .badge-category,
+  .post-links-container .post-links {
+    border-color: #444 !important;
+  }
+
+  #reply-control,
+  .badge-category-bg,
+  .badge-category-parent-bg {
+    border: #444 1px solid !important;
+  }
+
+  #list-area .contents,
+  #list-area .contents .topic-list thead,
+  #list-area .contents .topic-list thead th,
+  .category-list, .topic-list:not(.categories),
+  .category-list .topics .badge-notification,
+  .category-list .category .badge-notification {
+    background: transparent !important;
+    border-color: #444 !important;
+  }
+
+  .topic-list > tbody > tr:first-of-type {
+    border-top-color: #444 !important;
+  }
+
+  aside.onebox {
+    border-color: rgba(68, 68, 68, .2) !important;
+  }
+
+  #list-area .contents .topic-list-item {
+    border-bottom-color: transparent !important;
+  }
+
+  /* blue */
+  .btn-primary,
+  .open .grippie {
+    background-color: #182030 !important;
+  }
+
+  #banner,
+  .btn-primary:hover,
+  .alert.alert-info {
+    background-color: #273045 !important;
+  }
+
+  .user-menu .notifications li,
+  .badge-notification.new-posts,
+  .badge-notification.unread-posts {
+    background-color: #303b55 !important;
+  }
+
+  .alert.alert-info.clickable {
+    color: #9daccc;
+  }
+
+  /* green */
+  .alert.alert-success,
+  .modal.history-modal ins,
+  .modal.history-modal .diff-ins {
+    background-color: #152 !important;
+  }
+
+  .post-info .wiki,
+  .post-info .last-wiki-edit {
+    color: #55a532 !important;
+  }
+
+  /* red */
+  .alert.alert-error,
+  .modal.history-modal del,
+  .modal.history-modal .diff-del,
+  nav.post-controls button.like.d-hover {
+    background-color: #911 !important;
+  }
+
+  nav.post-controls button.like.d-hover i {
+    color: #f11 !important;
+  }
+
+  /* yellow */
+  .select2-results li em,
+  .modal.history-modal span.edit-reason {
+    background: #261d08 !important;
+  }
+
+  /* highlights */
+  a, a:hover, a:active, a:visited,
+  body #topic .topic-body .contents div.cooked a:not([class]) {
+    color: var(--main-color); /* not important */
+  }
+
+  .atom-io-navigation a:hover,
+  .topic-list .topic-list-item-separator td span,
+  .timeline-container .topic-timeline .timeline-last-read i.progress {
+    color: var(--main-color) !important;
+  }
+
+  .is-highlighted,
+   li.select-box-kit-row.is-highlighted,
+  .nav-pills > li.active > a,
+  .nav-pills > li > a.active,
+  .timeline-container .btn-primary,
+  .timeline-container .topic-timeline .timeline-handle {
+    background-color: var(--main-color) !important;
+  }
+
+  .nav-pills > li.active > a,
+  .nav-pills > li > a.active,
+  .topic-list .topic-list-item-separator td,
+  .timeline-container .topic-timeline .timeline-scrollarea {
+    border-color: var(--main-color) !important;
+  }
+
+  .topic-list .posters a:first-child .avatar.latest:not(.single) {
+    box-shadow: 0 0 3px 1px var(--main-color) !important;
+    border: 2px solid var(--main-color) !important;
+  }
+
+  ::selection {
+    background-color: var(--main-color) !important;
+    color: #fff !important;
+  }
+
+  ::-moz-selection {
+    background-color: var(--main-color) !important;
+    color: #fff !important;
+  }
+
+  kbd,
+  #keyboard-shortcuts-help ul b,
+  img[src*="github.com/favicon.ico"] {
+    filter: invert(80%) !important;
+  }
+
+  @keyframes background-fade-highlight {
+    0% { background-color: #333 !important; }
+    100% { background-color: transparent !important; }
+  }
+}
+
+@-moz-document domain("discourse.mozilla.org") {
+  .badge-category-bg,
+  .badge-category-parent-bg {
+    border: 0 !important;
+  }
+}
+
+@-moz-document url-prefix("https://www.sitepoint.com/community") {
+  .logomark svg > rect {
+    fill: #222 !important;
+  }
+  .logomark svg > path {
+    fill: #aaa !important;
+  }
+  #main-outlet .container img {
+    opacity: .5 !important;
+  }
+  .category-breadcrumb li a {
+    background: #222 !important;
+    color: #ccc !important;
+  }
+}
+
+@-moz-document domain("discuss.codemirror.net"), domain("meta.discourse.org") {
+  .title img {
+    filter:
+      drop-shadow(1px 1px 1px rgba(255, 255, 255, 0.3)) drop-shadow(-1px 1px 1px rgba(255, 255, 255, 0.3))
+      drop-shadow(1px -1px 1px rgba(255, 255, 255, 0.3)) drop-shadow(-1px -1px 1px rgba(255, 255, 255, 0.3));
+  }
+}
+
+@-moz-document domain("talk.commonmark.org") {
+  .title img {
+    filter: invert(80%) !important;
+  }
+}
