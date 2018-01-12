@@ -7,13 +7,13 @@
 @homepageURL  https://github.com/StylishThemes/discourse-dark
 @supportURL   https://github.com/StylishThemes/discourse-dark/issues
 @license      CC-BY-SA-4.0
-@var color    my-main-color "Main color" #07c
+@var color    main-color "Main color" #07c
 @preprocessor uso
 ==/UserStyle== */
 @-moz-document domain("discourse.mozilla.org"), domain("discourse.wicg.io"), domain("discuss.atom.io"), domain("discuss.codemirror.net"), domain("forum.freecodecamp.org"), url-prefix("https://www.sitepoint.com/community/"), domain("meta.discourse.org"), domain("talk.commonmark.org") {
 
   :root {
-    --main-color: var(--my-main-color, /*[[main-color]]*/);
+    --main-color: /*[[main-color]]*/;
   }
 
   body {
