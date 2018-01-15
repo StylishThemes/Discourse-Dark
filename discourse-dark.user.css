@@ -10,7 +10,7 @@
 @var color    main-color "Main color" #07c
 @preprocessor uso
 ==/UserStyle== */
-@-moz-document domain("discourse.mozilla.org"), domain("discourse.wicg.io"), domain("discuss.atom.io"), domain("discuss.codemirror.net"), domain("forum.freecodecamp.org"), url-prefix("https://www.sitepoint.com/community/"), domain("meta.discourse.org"), domain("talk.commonmark.org") {
+@-moz-document domain("discourse.mozilla.org"), domain("discourse.wicg.io"), domain("discuss.atom.io"), domain("discuss.codemirror.net"), domain("forum.freecodecamp.org"), url-prefix("https://www.sitepoint.com/community/"), domain("meta.discourse.org"), domain("platform.github.community"), domain("talk.commonmark.org"), domain("twittercommunity.com") {
 
   :root {
     --main-color: /*[[main-color]]*/;
@@ -98,6 +98,8 @@
     background-color: #333 !important;
   }
 
+  .placeholder-text,
+  .placeholder-avatar,
   body .dropdown-header,
   .topic-map .buttons .btn,
   .badge-notification.clicks,
@@ -195,6 +197,7 @@
 
   .menu-panel,
   .d-header .icons .icon,
+  ol.category-breadcrumb li,
   .drop-down-visible .d-header-icons .active .icon {
     border-color: transparent !important;
   }
@@ -402,5 +405,26 @@
 @-moz-document domain("talk.commonmark.org") {
   .title img {
     filter: invert(80%) !important;
+  }
+}
+
+@-moz-document domain("twittercommunity.com") {
+  .Navigation.Navigation--global,
+  .NavigationItem-link,
+  .NavigationItem:after,
+  .Footer.Footer--global,
+  .NavigationItem.NavigationItem--main:after {
+    background: #302541 !important;
+  }
+  .Navigation.Navigation--sub,
+  .Navigation--sub .NavigationItem-link,
+  .Navigation--sub .NavigationItem:after,
+  .NavigationItem.is-open:after,
+  .NavigationItem.is-open>.NavigationItem-link,
+  .NavigationItem[data-is-clickable="false"]:hover:after {
+    background: #2e2e2e !important;
+  }
+  .NavigationItem[data-is-clickable="false"]:hover>.NavigationItem-link {
+    background: transparent !important;
   }
 }
