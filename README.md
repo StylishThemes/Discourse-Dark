@@ -23,7 +23,9 @@
   * https://forum.freecodecamp.org/
   * https://www.sitepoint.com/community/
   * https://meta.discourse.org/
+  * https://platform.github.community/
   * https://talk.commonmark.org/
+  * https://twittercommunity.com/
   * Let us know if we need to add more.
 
 ## Preview
