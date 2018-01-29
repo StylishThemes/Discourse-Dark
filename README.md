@@ -21,11 +21,13 @@
   * https://discuss.atom.io/
   * https://discuss.codemirror.net
   * https://forum.freecodecamp.org/
-  * https://www.sitepoint.com/community/
+  * https://internals.rust-lang.org/
   * https://meta.discourse.org/
   * https://platform.github.community/
   * https://talk.commonmark.org/
   * https://twittercommunity.com/
+  * https://users.rust-lang.org/
+  * https://www.sitepoint.com/community/
   * Let us know if we need to add more.
 
 ## Preview

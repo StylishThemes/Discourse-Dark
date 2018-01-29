@@ -10,7 +10,18 @@
 @var color    main-color "Main color" #07c
 @preprocessor uso
 ==/UserStyle== */
-@-moz-document domain("discourse.mozilla.org"), domain("discourse.wicg.io"), domain("discuss.atom.io"), domain("discuss.codemirror.net"), domain("forum.freecodecamp.org"), url-prefix("https://www.sitepoint.com/community/"), domain("meta.discourse.org"), domain("platform.github.community"), domain("talk.commonmark.org"), domain("twittercommunity.com") {
+@-moz-document domain("discourse.mozilla.org"),
+domain("discourse.wicg.io"),
+domain("discuss.atom.io"),
+domain("discuss.codemirror.net"),
+domain("forum.freecodecamp.org"),
+domain("internals.rust-lang.org"),
+domain("meta.discourse.org"),
+domain("platform.github.community"),
+domain("talk.commonmark.org"),
+domain("twittercommunity.com"),
+domain("users.rust-lang.org"),
+url-prefix("https://www.sitepoint.com/community/") {
 
   :root {
     --main-color: /*[[main-color]]*/;
@@ -403,7 +414,7 @@
   }
 }
 
-@-moz-document domain("talk.commonmark.org") {
+@-moz-document domain("talk.commonmark.org"), domain("internals.rust-lang.org"), domain("users.rust-lang.org") {
   .title img {
     filter: invert(80%) !important;
   }
