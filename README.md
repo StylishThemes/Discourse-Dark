@@ -15,20 +15,7 @@
   </a>
 </p>
 
-* This dark theme applies to the following discourse-styled forums:
-  * https://discourse.mozilla.org/
-  * https://discourse.wicg.io/
-  * https://discuss.atom.io/
-  * https://discuss.codemirror.net
-  * https://forum.freecodecamp.org/
-  * https://internals.rust-lang.org/
-  * https://meta.discourse.org/
-  * https://platform.github.community/
-  * https://talk.commonmark.org/
-  * https://twittercommunity.com/
-  * https://users.rust-lang.org/
-  * https://www.sitepoint.com/community/
-  * Let us know if we need to add more.
+* See the [known list](https://github.com/StylishThemes/Discourse-Dark/wiki) of websites where this dark theme works. Let us know if we need to add more.
 
 ## Preview
 ![](./images/Atom-after.png)

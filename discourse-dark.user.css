@@ -11,17 +11,33 @@
 @preprocessor uso
 ==/UserStyle== */
 @-moz-document domain("discourse.mozilla.org"),
-domain("discourse.wicg.io"),
+domain("bbs.boingboing.net"),
+domain("community.bevoya.com"),
+domain("community.letsencrypt.org"),
 domain("discuss.atom.io"),
 domain("discuss.codemirror.net"),
+domain("discuss.elastic.co"),
+domain("discuss.howtogeek.com"),
+domain("forum.breadtopia.com"),
 domain("forum.freecodecamp.org"),
+domain("forum.ionicframework.com"),
+domain("forum.keyboardmaestro.com"),
+domain("forum.sublimetext.com"),
+domain("forum.talksurf.com"),
+domain("forum.vuejs.org"),
+domain("forums.docker.com"),
+domain("forums.habitat.sh"),
+domain("forums.meteor.com"),
+domain("forums.urbackup.org"),
 domain("internals.rust-lang.org"),
 domain("meta.discourse.org"),
 domain("platform.github.community"),
 domain("talk.commonmark.org"),
 domain("twittercommunity.com"),
 domain("users.rust-lang.org"),
-url-prefix("https://www.sitepoint.com/community/") {
+domain("zegist.com"),
+url-prefix("https://www.sitepoint.com/community/"),
+regexp("https?://discourse\.\S*") {
 
   :root {
     --main-color: /*[[main-color]]*/;
@@ -35,7 +51,8 @@ url-prefix("https://www.sitepoint.com/community/") {
   .d-header .panel,
   .cat .dropdown-header,
   .topic-body,
-  .topic-body.highlighted {
+  .topic-body.highlighted,
+  .docked .d-header .title-wrapper {
     background: transparent !important;
   }
 
@@ -85,6 +102,7 @@ url-prefix("https://www.sitepoint.com/community/") {
   .composer-popup,
   .d-editor .d-editor-modal,
   .user-menu .notifications li.read,
+  .topic-list > tbody > tr.topic-list-item,
   .list-controls .category-dropdown-menu,
   .select2-results .select2-no-results,
   .select2-results .select2-searching,
@@ -246,7 +264,8 @@ url-prefix("https://www.sitepoint.com/community/") {
   .emoji-picker .footer,
   .latest-topic-list-item,
   .extra-info .badge-category,
-  .post-links-container .post-links {
+  .post-links-container .post-links,
+  .topic-list tr.topic-list-item td {
     border-color: #444 !important;
   }
 
@@ -358,6 +377,10 @@ url-prefix("https://www.sitepoint.com/community/") {
     border-color: var(--main-color) !important;
   }
 
+  .d-header {
+    box-shadow: none !important;
+  }
+
   .topic-list .posters a:first-child .avatar.latest:not(.single) {
     box-shadow: 0 0 3px 1px var(--main-color) !important;
     border: 2px solid var(--main-color) !important;
@@ -392,6 +415,46 @@ url-prefix("https://www.sitepoint.com/community/") {
   }
 }
 
+@-moz-document domain("discourse.roots.io") {
+  div[style*="background: #ddf7e8"] {
+    background: hsla(145, 62%, 10%, .33) !important;
+  }
+  .nav-primary .nav > li:not(.active) > a:not(:hover) {
+    color: #ddd !important;
+  }
+}
+
+@-moz-document domain("discuss.codemirror.net"), domain("discuss.elastic.co"), domain("meta.discourse.org") {
+  .title img {
+    filter:
+      drop-shadow(1px 1px 1px rgba(255, 255, 255, 0.3)) drop-shadow(-1px 1px 1px rgba(255, 255, 255, 0.3))
+      drop-shadow(1px -1px 1px rgba(255, 255, 255, 0.3)) drop-shadow(-1px -1px 1px rgba(255, 255, 255, 0.3));
+  }
+}
+
+@-moz-document domain("forums.docker.com") {
+  p {
+  	color: #ddd !important;
+  }
+  #banner-content, #banner-content p {
+    background-color: #273045 !important;
+    color: #b0c2cf !important;
+  }
+  .fan, .header .navbar-nav.primary {
+    background: #283045 !important;
+  }
+  footer, .bottom_footer, #navbar .dropdown-menu {
+  	background: #222 !important;
+    border-color: #444 !important;
+  }
+}
+
+@-moz-document domain("forums.urbackup.org"), domain("internals.rust-lang.org"), domain("talk.commonmark.org"), domain("users.rust-lang.org") {
+  .title img {
+    filter: invert(80%) !important;
+  }
+}
+
 @-moz-document url-prefix("https://www.sitepoint.com/community") {
   .logomark svg > rect {
     fill: #222 !important;
@@ -405,20 +468,6 @@ url-prefix("https://www.sitepoint.com/community/") {
   .category-breadcrumb li a {
     background: #222 !important;
     color: #ccc !important;
-  }
-}
-
-@-moz-document domain("discuss.codemirror.net"), domain("meta.discourse.org") {
-  .title img {
-    filter:
-      drop-shadow(1px 1px 1px rgba(255, 255, 255, 0.3)) drop-shadow(-1px 1px 1px rgba(255, 255, 255, 0.3))
-      drop-shadow(1px -1px 1px rgba(255, 255, 255, 0.3)) drop-shadow(-1px -1px 1px rgba(255, 255, 255, 0.3));
-  }
-}
-
-@-moz-document domain("talk.commonmark.org"), domain("internals.rust-lang.org"), domain("users.rust-lang.org") {
-  .title img {
-    filter: invert(80%) !important;
   }
 }
 
