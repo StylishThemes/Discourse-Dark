@@ -124,7 +124,8 @@ regexp("https?://discourse\.\S*") {
   li.select-box-kit-row,
   .menu-panel .category-link:hover,
   .menu-panel ul.menu-links li a:hover,
-  .menu-panel ul li.heading a:hover {
+  .menu-panel ul li.heading a:hover,
+  .badge-category {
     background-color: #333 !important;
   }
 
@@ -358,7 +359,8 @@ regexp("https?://discourse\.\S*") {
 
   .atom-io-navigation a:hover,
   .topic-list .topic-list-item-separator td span,
-  .timeline-container .topic-timeline .timeline-last-read i.progress {
+  .timeline-container .topic-timeline .timeline-last-read i.progress,
+  a.badge-wrapper.badge-wrapper .badge-category:hover {
     color: var(--main-color) !important;
   }
 
@@ -374,7 +376,8 @@ regexp("https?://discourse\.\S*") {
   .nav-pills > li.active > a,
   .nav-pills > li > a.active,
   .topic-list .topic-list-item-separator td,
-  .timeline-container .topic-timeline .timeline-scrollarea {
+  .timeline-container .topic-timeline .timeline-scrollarea,
+  .badge-category:hover {
     border-color: var(--main-color) !important;
   }
 
