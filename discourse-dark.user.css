@@ -56,7 +56,8 @@ regexp("https?://discourse\.\S*") {
   .cat .dropdown-header,
   .topic-body,
   .topic-body.highlighted,
-  .docked .d-header .title-wrapper {
+  .docked .d-header .title-wrapper,
+  .badge-category-bg + .badge-category {
     background: transparent !important;
   }
 
@@ -407,6 +408,10 @@ regexp("https?://discourse\.\S*") {
   #keyboard-shortcuts-help ul b,
   img[src*="github.com/favicon.ico"] {
     filter: invert(80%) !important;
+  }
+
+  .badge-category-bg {
+    filter: brightness(75%) !important;
   }
 
   @keyframes background-fade-highlight {
