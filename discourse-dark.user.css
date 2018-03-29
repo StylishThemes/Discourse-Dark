@@ -436,11 +436,12 @@ regexp("https?://discourse\.\S*") {
   }
 }
 
-@-moz-document domain("discuss.codemirror.net"), domain("discuss.elastic.co"), domain("meta.discourse.org") {
+@-moz-document domain("discourse.slicer.org"), domain("discuss.codemirror.net"), domain("discuss.elastic.co"), domain("meta.discourse.org") {
   .title img {
+    --shadow: rgba(80, 80, 80, .3);
     filter:
-      drop-shadow(1px 1px 1px rgba(255, 255, 255, 0.3)) drop-shadow(-1px 1px 1px rgba(255, 255, 255, 0.3))
-      drop-shadow(1px -1px 1px rgba(255, 255, 255, 0.3)) drop-shadow(-1px -1px 1px rgba(255, 255, 255, 0.3));
+      drop-shadow(1px 1px 1px var(--shadow)) drop-shadow(-1px 1px 1px var(--shadow))
+      drop-shadow(1px -1px 1px var(--shadow)) drop-shadow(-1px -1px 1px var(--shadow));
   }
 }
 
