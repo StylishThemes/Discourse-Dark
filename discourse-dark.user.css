@@ -409,7 +409,8 @@ regexp("https?://discourse\.\S*") {
     filter: invert(80%) !important;
   }
 
-  .badge-category-bg {
+  .badge-category-bg,
+  a[data-user-card] img[src*="https://avatars.discourse.org"] {
     filter: brightness(75%) !important;
   }
 
