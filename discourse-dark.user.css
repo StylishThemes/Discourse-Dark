@@ -363,8 +363,7 @@ regexp("https?://discourse\.\S*") {
 
   .atom-io-navigation a:hover,
   .topic-list .topic-list-item-separator td span,
-  .timeline-container .topic-timeline .timeline-last-read i.progress,
-  a.badge-wrapper.badge-wrapper .badge-category:hover {
+  .timeline-container .topic-timeline .timeline-last-read i.progress {
     color: var(--main-color) !important;
   }
 
