@@ -57,11 +57,13 @@ regexp("https?://discourse\.\S*") {
   .topic-body,
   .topic-body.highlighted,
   .docked .d-header .title-wrapper,
-  .badge-category-bg + .badge-category {
+  .badge-category-bg + .badge-category,
+  .fa[style*="background"] {
     background: transparent !important;
   }
 
-  .d-header {
+  .d-header,
+  .badge-card .badge-icon {
     background: #111 !important;
   }
 
@@ -72,7 +74,8 @@ regexp("https?://discourse\.\S*") {
   .user-preferences .bio-composer .d-editor-preview,
   .edit-category-tab-topic-template .d-editor-preview,
   .about .details,
-  .user-main .about .secondary {
+  .user-main .about .secondary,
+  .badge-card {
     background: #181818 !important;
     border-color: #444 !important;
   }
