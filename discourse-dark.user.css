@@ -65,9 +65,14 @@ regexp("https?://discourse\.\S*") {
     background: #111 !important;
   }
 
+  .primary,
   #reply-control,
   .bootbox.modal,
-  .topic-list .topic-list-item-separator td span {
+  .topic-list .topic-list-item-separator td span,
+  .user-preferences .bio-composer .d-editor-preview,
+  .edit-category-tab-topic-template .d-editor-preview,
+  .about .details,
+  .user-main .about .secondary {
     background: #181818 !important;
     border-color: #444 !important;
   }
@@ -75,6 +80,7 @@ regexp("https?://discourse\.\S*") {
   code,
   pre code,
   p > code,
+  input,
   .btn,
   .message,
   #reply-control input,
@@ -91,7 +97,10 @@ regexp("https?://discourse\.\S*") {
   .select-box-kit-collection,
   .select-kit .select-kit-collection,
   .select-kit-filter,
-  .select-box-kit-filter {
+  .select-box-kit-filter,
+  .d-editor-textarea-wrapper,
+  .user-preferences .bio-composer,
+  div.ac-wrap {
     background: #222 !important;
     color: #ddd !important;
     border-color: #444 !important;
@@ -112,9 +121,11 @@ regexp("https?://discourse\.\S*") {
   .select2-results .select2-no-results,
   .select2-results .select2-searching,
   .select2-results .select2-selection-limit,
-  .primary, .details, .user-content, .topic-map,
+  .details, .user-content, .topic-map,
   .drop-down-visible .d-header-icons .active .icon,
-  .drop-down-visible .d-header .icons .active .icon {
+  .drop-down-visible .d-header .icons .active .icon,
+  .drop-down-mode .d-header-icons .active .icon,
+  .user-stream .item, .user-stream .user-stream-item {
     background: #222 !important;
     color: #aaa !important;
     border-color: #444 !important;
@@ -138,7 +149,6 @@ regexp("https?://discourse\.\S*") {
   body .dropdown-header,
   .topic-map .buttons .btn,
   .badge-notification.clicks,
-  .d-editor-textarea-wrapper,
   nav.post-controls button.d-hover,
   .select2-results .select2-highlighted {
     background: #333 !important;
@@ -165,6 +175,7 @@ regexp("https?://discourse\.\S*") {
     background-color: #444 !important;
   }
 
+  .user-preferences .static,
   .discourse-tag.simple,
   .discourse-tag.simple:hover,
   .discourse-tag.simple:visited,
@@ -172,6 +183,8 @@ regexp("https?://discourse\.\S*") {
   body .extra-info-wrapper .discourse-tag,
   .d-header .icons .active .icon:hover,
   .drop-down-visible .d-header .icons .active .icon:hover,
+  .stats-section li.linked-stat a,
+  .user-main .about .secondary dd,
   /* syntax theme */
   .hljs-subst, .hljs-request, .hljs-status,
   .hljs-keyword, .javascript .hljs-title, .nginx .hljs-title {
@@ -181,6 +194,7 @@ regexp("https?://discourse\.\S*") {
   input,
   select,
   textarea,
+  .user-navigation .nav-stacked a.active,
   .topic-body .contents .cooked a:not(.mention):not(.mention-group),
   .topic-body .contents .cooked a:not(.mention):not(.mention-group):active,
   .topic-body .contents .cooked a:not(.mention):not(.mention-group):hover,
@@ -240,7 +254,8 @@ regexp("https?://discourse\.\S*") {
   }
 
   .drop-down-visible .d-header-icons .active .icon:after,
-  .drop-down-visible .d-header .icons .active .icon:after {
+  .drop-down-visible .d-header .icons .active .icon:after,
+  .drop-down-mode .d-header-icons .active .icon:after {
     border-color: #222 !important;
   }
 
@@ -271,7 +286,8 @@ regexp("https?://discourse\.\S*") {
   .latest-topic-list-item,
   .extra-info .badge-category,
   .post-links-container .post-links,
-  .topic-list tr.topic-list-item td {
+  .topic-list tr.topic-list-item td,
+  .topic-list > tbody {
     border-color: #444 !important;
   }
 
@@ -338,6 +354,7 @@ regexp("https?://discourse\.\S*") {
   }
 
   /* red */
+  .btn-danger,
   .alert.alert-error,
   .modal.history-modal del,
   .modal.history-modal .diff-del,
@@ -351,7 +368,8 @@ regexp("https?://discourse\.\S*") {
 
   /* yellow */
   .select2-results li em,
-  .modal.history-modal span.edit-reason {
+  .modal.history-modal span.edit-reason,
+  .select-kit .select-kit-row.is-selected {
     background: #261d08 !important;
   }
 
@@ -372,7 +390,8 @@ regexp("https?://discourse\.\S*") {
   .nav-pills > li.active > a,
   .nav-pills > li > a.active,
   .timeline-container .btn-primary,
-  .timeline-container .topic-timeline .timeline-handle {
+  .timeline-container .topic-timeline .timeline-handle,
+  div.menu-links-header a:hover {
     background-color: var(--main-color) !important;
   }
 
@@ -447,7 +466,7 @@ regexp("https?://discourse\.\S*") {
 
 @-moz-document domain("forums.docker.com") {
   p {
-  	color: #ddd !important;
+    color: #ddd !important;
   }
   #banner-content, #banner-content p {
     background-color: #273045 !important;
@@ -457,7 +476,7 @@ regexp("https?://discourse\.\S*") {
     background: #283045 !important;
   }
   footer, .bottom_footer, #navbar .dropdown-menu {
-  	background: #222 !important;
+    background: #222 !important;
     border-color: #444 !important;
   }
 }
@@ -469,7 +488,7 @@ regexp("https?://discourse\.\S*") {
 }
 
 @-moz-document domain("forums.sonarr.tv") {
-	.title img {
+  .title img {
     filter: invert(100%) !important;
   }
   .title a:before {
