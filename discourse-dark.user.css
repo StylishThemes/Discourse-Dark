@@ -270,6 +270,7 @@ regexp("https?://discourse\\.\\S*") {
 
   hr,
   input,
+  tbody,
   .d-header,
   .d-header .title,
   .modal-header,
