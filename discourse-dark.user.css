@@ -45,7 +45,7 @@ domain("twittercommunity.com"),
 domain("users.rust-lang.org"),
 domain("zegist.com"),
 url-prefix("https://www.sitepoint.com/community/"),
-regexp("https?://discourse\.\S*") {
+regexp("https?://discourse\\.\\S*") {
 
   :root {
     --main-color: /*[[main-color]]*/;
