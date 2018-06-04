@@ -306,6 +306,14 @@ regexp("https?://discourse\\.\\S*") {
     border: #444 1px solid !important;
   }
 
+  /* Advanced Search Bar*/
+  .search-container .search-advanced-sidebar .search-advanced-filters {
+      background: #1d1d1d !important;
+  }
+  .search-container .search-advanced-sidebar .search-advanced-title {
+      background: #2c2c2c !important;
+  }
+
   #list-area .contents,
   #list-area .contents .topic-list thead,
   #list-area .contents .topic-list thead th,
