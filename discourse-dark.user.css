@@ -154,6 +154,7 @@ regexp("https?://discourse\\.\\S*") {
 
   .placeholder-text,
   .placeholder-avatar,
+  .topic-list > thead,
   body .dropdown-header,
   .topic-map .buttons .btn,
   .badge-notification.clicks,
