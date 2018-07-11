@@ -167,6 +167,7 @@ regexp("https?://discourse\\.\\S*") {
 
   .btn:hover,
   .cat:hover,
+  .like-button:hover,
   .d-editor-spacer,
   pre.onebox code li.selected,
   .topic-list .sortable:hover,
@@ -175,7 +176,8 @@ regexp("https?://discourse\\.\\S*") {
   .d-header .icons .icon:hover,
   .category-row.is-highlighted,
   nav.post-controls .show-replies:hover,
-  .drop-down-visible .d-header .icons .icon:hover {
+  .drop-down-visible .d-header .icons .icon:hover,
+  nav.post-controls .like-button:hover button.d-hover {
     background: #444 !important;
   }
 
@@ -235,6 +237,7 @@ regexp("https?://discourse\\.\\S*") {
   .extra-info-wrapper .topic-link,
   nav.post-controls button.create,
   .user-menu .notifications li span,
+  .like-button:hover .like-count.d-hover,
   .badge-wrapper.bullet span.badge-category,
   .badge-wrapper.bar span.badge-category,
   .list-controls .category-dropdown-menu .home,
@@ -381,6 +384,10 @@ regexp("https?://discourse\\.\\S*") {
     background-color: #911 !important;
   }
 
+  .d-icon-d-liked,
+  nav.post-controls button.has-like,
+  nav.post-controls button.has-like .fa-heart,
+  nav.post-controls button.has-like .fa-heart-o,
   nav.post-controls button.like.d-hover i {
     color: #f11 !important;
   }
