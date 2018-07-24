@@ -206,6 +206,7 @@ regexp("https?://discourse\\.\\S*") {
   input,
   select,
   textarea,
+  .fps-result .blurb .search-highlight,
   .user-navigation .nav-stacked a.active,
   .topic-body .contents .cooked a:not(.mention):not(.mention-group),
   .topic-body .contents .cooked a:not(.mention):not(.mention-group):active,
@@ -302,7 +303,8 @@ regexp("https?://discourse\\.\\S*") {
   .extra-info .badge-category,
   .post-links-container .post-links,
   .topic-list tr.topic-list-item td,
-  .topic-list > tbody {
+  .topic-list > tbody,
+  .search-container .search-advanced .search-info {
     border-color: #444 !important;
   }
 
