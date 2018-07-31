@@ -20,16 +20,17 @@
 ## Preview
 ![](./images/Atom-after.png)
 
-## Installing
+## Installation
 
-* If you're using a browser extension:
-  * Stylus - get the addon for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) and [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/).
-  * Stylish - get the addon for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/2108/), [Chrome](https://chrome.google.com/extensions/detail/fjnbnpbmkenffdnngjfgmeleoegfcffe), [Opera](https://addons.opera.com/en/extensions/details/stylish/), [Safari](http://sobolev.us/stylish/) and [Firefox Mobile](https://addons.mozilla.org/en-US/firefox/addon/2108/).
-  * FreeStyler is available for [Chrome](https://chrome.google.com/webstore/detail/freestyler/hihigldmabkodfpehkgdemjklmaebmca).<br>
-  * Then install this style using:
-    * [userstyles.org](https://userstyles.org/styles/154032/discourse-dark) (with customization options)
-    * or, add it [manually](https://github.com/StylishThemes/Discourse-Dark/blob/master/discourse-dark.user.css) into the editor.
-* Or, **[install directly](https://github.com/StylishThemes/Discourse-Dark/raw/master/discourse-dark.user.css)** from this repository by opening the user.css file; only available using Stylus or FreeStyler (see the [documentation](https://github.com/openstyles/stylus/wiki/Usercss)). :tada:
+A userstyle extension is required, common ones include:
+
+🎨 Stylus for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/).<br>
+🎨 xStyle for [Firefox](https://addons.mozilla.org/firefox/addon/xstyle/) or [Chrome](https://chrome.google.com/webstore/detail/xstyle/hncgkmhphmncjohllpoleelnibpmccpj).
+
+Then install using one of these methods:
+
+📦 [Install the usercss](https://github.com/StylishThemes/Discourse-Dark/raw/master/discourse-dark.user.css) with Stylus or xStyle. Supports automatic updates.<br>
+📦 [Install from userstyles.org](https://userstyles.org/styles/154032) with customization, does not support automatic updates (NO LONGER UPDATED).<br>
 
 ## Updating
 
@@ -37,8 +38,8 @@ If a recent change broke the style, chances are that we already fixed it. Make s
 
 ## Contributions
 
-If you would like to contribute to this repository, please...
+1. 👓 Read the [contribution guidelines](./.github/CONTRIBUTING.md).
+1. ![repo-forked](https://user-images.githubusercontent.com/136959/42383736-c4cb0db8-80fd-11e8-91ca-12bae108bccc.png) [Fork](https://github.com/StylishThemes/Discourse-Dark/fork) or ![cloud-download](https://user-images.githubusercontent.com/136959/42401932-9ee9cae0-813d-11e8-8691-16e29a85d3b9.png) [download](https://github.com/StylishThemes/Discourse-Dark/archive/master.zip) this repository.
+1. 👌 Create a pull request!
 
-1. Fork
-2. Make changes (please read the [contribution guidelines](./.github/CONTRIBUTING.md) and abide by them)
-3. Create a pull request!
+Thanks to all that have [contributed](./AUTHORS) so far!
