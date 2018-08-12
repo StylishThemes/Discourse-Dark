@@ -292,6 +292,7 @@ regexp("https?://discourse\\.\\S*") {
   .nav-pills > li > a,
   .category-list tbody tr,
   .small-action,
+  .embedded-posts,
   .select-kit-filter,
   .select-box-kit-filter,
   .d-editor-button-bar,
