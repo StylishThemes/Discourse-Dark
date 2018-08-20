@@ -13,10 +13,8 @@ tmp/
 
 # Build
 node_modules/
-
-# Built Web Extension files
-*.xpi
-*.zip
+build.json
+*.build.css
 
 # Windows crap
 Thumbs.db
