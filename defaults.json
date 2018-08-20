@@ -1,0 +1,10 @@
+{
+  "preprocessor": "uso",
+  "variables": {
+    "Main color":  {
+      "type": "color",
+      "label": "main-color",
+      "value": "#07c"
+    }
+  }
+}

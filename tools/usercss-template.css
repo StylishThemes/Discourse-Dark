@@ -1,0 +1,13 @@
+/* ==UserStyle==
+@name         {{title}}
+@version      {{version}}
+@description  {{description}}
+@namespace    StylishThemes
+@author       StylishThemes
+@homepageURL  https://github.com/{{repository}}
+@supportURL   https://github.com/{{repository}}/issues
+@updateURL    https://raw.githubusercontent.com/{{repository}}/master/{{main}}
+@license      CC-BY-SA-4.0
+{{variables}}
+@preprocessor {{preprocessor}}
+==/UserStyle== */
