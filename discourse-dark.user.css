@@ -1,13 +1,14 @@
 /* ==UserStyle==
 @name         Discourse Dark
-@namespace    StylishThemes
 @version      1.0.19
 @description  Darken Discourse forums
+@namespace    StylishThemes
 @author       StylishThemes
-@homepageURL  https://github.com/StylishThemes/discourse-dark
-@supportURL   https://github.com/StylishThemes/discourse-dark/issues
+@homepageURL  https://github.com/StylishThemes/Discourse-Dark
+@supportURL   https://github.com/StylishThemes/Discourse-Dark/issues
+@updateURL    https://raw.githubusercontent.com/StylishThemes/Discourse-Dark/master/discourse-dark.user.css
 @license      CC-BY-SA-4.0
-@var color    main-color "Main color" #07c
+@advanced color main-color "Main color" #07c
 @preprocessor uso
 ==/UserStyle== */
 @-moz-document domain("discourse.mozilla.org"),
