@@ -27,14 +27,9 @@ A userstyle extension is required, common ones include:
 🎨 Stylus for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/).<br>
 🎨 xStyle for [Firefox](https://addons.mozilla.org/firefox/addon/xstyle/) or [Chrome](https://chrome.google.com/webstore/detail/xstyle/hncgkmhphmncjohllpoleelnibpmccpj).
 
-Then install using one of these methods:
+Then:
 
-📦 [Install the usercss](https://github.com/StylishThemes/Discourse-Dark/raw/master/discourse-dark.user.css) with Stylus or xStyle. Supports automatic updates.<br>
-📦 [Install from userstyles.org](https://userstyles.org/styles/154032) with customization, does not support automatic updates (NO LONGER UPDATED).<br>
-
-## Updating
-
-If a recent change broke the style, chances are that we already fixed it. Make sure to reinstall from [userstyles.org](https://userstyles.org/styles/154032/discourse-dark) or [GitHub](https://github.com/StylishThemes/Discourse-Dark/raw/master/discourse-dark.user.css) before opening an issue.
+📦 [Install the usercss](https://github.com/StylishThemes/Discourse-Dark/raw/master/discourse-dark.user.css) with Stylus or xStyle. Supports automatic updates.
 
 ## Contributions
 

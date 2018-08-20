@@ -77,7 +77,32 @@ If you don't know CSS very well and have found a missing style, please include a
 
 ## Getting Started
 
-* Download, fork or clone this repository.
-* It's easiest to try out your changes within the Stylus editor.
-  * The live preview option (available soon) will make it easy to see your style changes as you make them.
-  * Once done, make the same changes to the `discourse-dark.user.css` file in the repo and save. It might be easiest to copy &amp; paste the entire style from the Stylus editor.
+* [Download](https://github.com/StylishThemes/Discourse-Dark/archive/master.zip), [fork](https://github.com/StylishThemes/Discourse-Dark/fork) or clone this repository.
+* Use [node.js](http://nodejs.org/) to run `npm install`.
+* Make any changes to the `discourse-dark.user.css` file and save.
+
+### Build & test
+
+* Create & change into a new branch of your local Discourse-Dark repository.
+* Open the style in the Stylus editor, and make sure to have "live preview" checked for testing.
+* Once you are satisfied with the changes, select all the css (<kbd>Ctrl</kbd> + <kbd>a</kbd>), copy (<kbd>Ctrl</kbd> + <kbd>c</kbd>) then paste (<kbd>Ctrl</kbd> + <kbd>v</kbd>) it into your editor.
+* Run `npm test` to test the css changes.
+* Now you can add and commit the changes of the `discourse-dark.user.css` file to your fork's branch.
+* If you haven't already contributed, then run `npm run authors` to add your name to our list of contributors :smile:
+* Push the changes to your branch, then submit a pull request.
+* And thanks again for contributing!
+
+### Development Scripts
+
+* `npm run authors`: Runs a batch file to rebuild the `AUTHORS` file. Update the `.mailmap` file for any duplicate entries.
+* `npm run clean`: Runs the perfectionist script & cleans up after it.
+* `npm run eslint`: Lint the JavaScript code in the `tools` directory.
+* `npm run lint`: Run eslint & stylelint scripts.
+* `npm run major`: Creates a semantic major release.
+* `npm run minor`: Creates a semantic minor release.
+* `npm run patch`: Creates a semantic patch release.
+* `npm run perfectionist`: Runs perfectionist only. CSS is not cleaned!
+* `npm run stylelint`: Run stylelint on the css file.
+* `npm run test`: Same as `npm run lint`.
+* `npm run update`: Update development dependencies.
+* `npm run usercss`: Update usercss variables using usercss template; variable data obtained from `defaults.json`.
