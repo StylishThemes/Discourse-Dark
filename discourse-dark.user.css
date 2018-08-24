@@ -406,3 +406,9 @@ domain("users.rust-lang.org") {
     background: transparent !important;
   }
 }
+
+@-moz-document domain("discourse.trueos.org") {
+  #site-logo.logo-big {
+    filter: invert(100%) hue-rotate(180deg) brightness(.9) !important;
+  }
+}
