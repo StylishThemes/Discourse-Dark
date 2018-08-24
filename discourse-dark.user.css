@@ -63,7 +63,7 @@ regexp("https?://discourse\\.\\S*") {
   .fa[style*="background"] {
     background: transparent !important;
   }
-  .d-header, .badge-card .badge-icon {
+  .d-header, .badge-card .badge-icon, div.poll .results .bar-back {
     background: #111 !important;
   }
   .primary, #reply-control, .bootbox.modal,
@@ -161,6 +161,7 @@ regexp("https?://discourse\\.\\S*") {
   .badge-wrapper.bar span.badge-category,
   .list-controls .category-dropdown-menu .home,
   .category-list tbody .category h3 a[href],
+  div.poll li[data-poll-option-id],
   /* Fix Mozilla Brazil category text color */
   .badge-category-bg[style*="background-color: #00683"] + span[style*="color: #000000"] {
     color: #ccc !important;
@@ -190,7 +191,8 @@ regexp("https?://discourse\\.\\S*") {
   .emoji-picker .categories-column, .emoji-picker .footer,
   .latest-topic-list-item, .extra-info .badge-category,
   .post-links-container .post-links, .topic-list tr.topic-list-item td,
-  .topic-list > tbody, .search-container .search-advanced .search-info {
+  .topic-list > tbody, .search-container .search-advanced .search-info,
+  div.poll, div.poll .poll-info, div.poll .poll-buttons {
     border-color: #444 !important;
   }
   #reply-control, .badge-category-bg, .badge-category-parent-bg {
