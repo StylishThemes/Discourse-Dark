@@ -160,8 +160,7 @@ regexp("https?://discourse\\.\\S*") {
   .badge-wrapper.bullet span.badge-category,
   .badge-wrapper.bar span.badge-category,
   .list-controls .category-dropdown-menu .home,
-  .category-list tbody .category h3 a[href],
-  div.poll li[data-poll-option-id],
+  .category-list tbody .category h3 a[href], div.poll li[data-poll-option-id],
   /* Fix Mozilla Brazil category text color */
   .badge-category-bg[style*="background-color: #00683"] + span[style*="color: #000000"] {
     color: #ccc !important;
@@ -191,8 +190,8 @@ regexp("https?://discourse\\.\\S*") {
   .emoji-picker .categories-column, .emoji-picker .footer,
   .latest-topic-list-item, .extra-info .badge-category,
   .post-links-container .post-links, .topic-list tr.topic-list-item td,
-  .topic-list > tbody, .search-container .search-advanced .search-info,
-  div.poll, div.poll .poll-info, div.poll .poll-buttons {
+  .topic-list > tbody, .search-container .search-advanced .search-info, div.poll,
+  div.poll .poll-info, div.poll .poll-buttons {
     border-color: #444 !important;
   }
   #reply-control, .badge-category-bg, .badge-category-parent-bg {
@@ -362,8 +361,8 @@ domain("users.rust-lang.org") {
     filter: invert(100%) !important;
   }
   .title a:before {
-    content: '';
-    background: url(https://sonarr.tv/img/logo.png) no-repeat;
+    content: "";
+    background: url("https://sonarr.tv/img/logo.png") no-repeat;
     background-size: cover;
     width: 40px;
     height: 40px;
@@ -406,7 +405,6 @@ domain("users.rust-lang.org") {
     background: transparent !important;
   }
 }
-
 @-moz-document domain("discourse.trueos.org") {
   #site-logo.logo-big {
     filter: invert(100%) hue-rotate(180deg) brightness(.9) !important;

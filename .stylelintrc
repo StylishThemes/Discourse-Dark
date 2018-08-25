@@ -16,10 +16,12 @@ rules:
   declaration-block-no-duplicate-properties: null
   declaration-block-single-line-max-declarations: null
   declaration-colon-newline-after: null
+  declaration-empty-line-before: null
   font-family-name-quotes: always-where-recommended
   font-family-no-duplicate-names: true
   function-url-quotes: always
   indentation: null
+  keyframe-declaration-no-important: null
   max-empty-lines: 0
   no-descending-specificity: null
   no-duplicate-selectors: null
