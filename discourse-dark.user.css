@@ -65,7 +65,8 @@ regexp("https?://discourse\\.\\S*") {
   .fa[style*="background"] {
     background: transparent !important;
   }
-  .d-header, .badge-card .badge-icon, div.poll .results .bar-back {
+  .d-header, .badge-card .badge-icon, div.poll .results .bar-back, #top-navbar,
+  #mate-footer {
     background: #111 !important;
   }
   .primary, #reply-control, .bootbox.modal,
