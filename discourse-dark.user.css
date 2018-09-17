@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Discourse Dark
-@version      1.0.24
+@version      1.0.25
 @description  Darken Discourse forums
 @namespace    StylishThemes
 @author       StylishThemes
@@ -162,11 +162,14 @@ regexp("https?://discourse\\.\\S*") {
   .user-menu .notifications li span, .like-button:hover .like-count.d-hover,
   .badge-wrapper.bullet span.badge-category,
   .badge-wrapper.bar span.badge-category,
-  .list-controls .category-dropdown-menu .home,
+  .list-controls .category-dropdown-menu .home, .pihole-nav-link-container a,
   .category-list tbody .category h3 a[href], div.poll li[data-poll-option-id],
   /* Fix Mozilla Brazil category text color */
   .badge-category-bg[style*="background-color: #00683"] + span[style*="color: #000000"] {
     color: #ccc !important;
+  }
+  .pihole-nav-link-container a:hover, .pihole-nav-link-container a:focus {
+    color: #fff !important;
   }
   /* syntax theme */
   .hljs-tag, .hljs-tag .hljs-title, .django .hljs-tag .hljs-keyword {
@@ -360,20 +363,6 @@ domain("users.rust-lang.org") {
   }
 }
 @-moz-document domain("forums.sonarr.tv") {
-  .title img {
-    filter: invert(100%) !important;
-  }
-  .title a:before {
-    content: "";
-    background: url("https://sonarr.tv/img/logo.png") no-repeat;
-    background-size: cover;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-  }
   .banner {
     background: #283045 !important;
   }
@@ -409,7 +398,8 @@ domain("users.rust-lang.org") {
   }
 }
 @-moz-document domain("discourse.trueos.org"),
-domain("forum.f-droid.org") {
+domain("forum.f-droid.org"),
+domain("discourse.pi-hole.net") {
   #site-logo.logo-big {
     filter: invert(100%) hue-rotate(180deg) brightness(.9) !important;
   }
