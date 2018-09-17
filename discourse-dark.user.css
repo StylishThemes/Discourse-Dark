@@ -363,20 +363,6 @@ domain("users.rust-lang.org") {
   }
 }
 @-moz-document domain("forums.sonarr.tv") {
-  .title img {
-    filter: invert(100%) !important;
-  }
-  .title a:before {
-    content: "";
-    background: url("https://sonarr.tv/img/logo.png") no-repeat;
-    background-size: cover;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-  }
   .banner {
     background: #283045 !important;
   }
