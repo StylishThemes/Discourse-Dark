@@ -22,6 +22,7 @@ domain("discuss.codemirror.net"),
 domain("discuss.elastic.co"),
 domain("discuss.flexget.com"),
 domain("discuss.howtogeek.com"),
+domain("discuss.ocaml.org"),
 domain("education.github.community"),
 domain("internals.rust-lang.org"),
 domain("forum.breadtopia.com"),
@@ -398,9 +399,10 @@ domain("users.rust-lang.org") {
     background: transparent !important;
   }
 }
-@-moz-document domain("discourse.trueos.org"),
-domain("forum.f-droid.org"),
-domain("discourse.pi-hole.net") {
+@-moz-document domain("discourse.pi-hole.net"),
+domain("discourse.trueos.org"),
+domain("discuss.ocaml.org"),
+domain("forum.f-droid.org") {
   #site-logo.logo-big {
     filter: invert(100%) hue-rotate(180deg) brightness(.9) !important;
   }
