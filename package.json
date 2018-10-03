@@ -1,7 +1,7 @@
 {
   "name": "discourse-dark",
   "title": "Discourse Dark",
-  "version": "1.0.27",
+  "version": "1.0.28",
   "description": "Darken Discourse forums",
   "license": "CC-BY-SA-4.0",
   "repository": "https://github.com/StylishThemes/Discourse-Dark",
