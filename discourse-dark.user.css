@@ -33,6 +33,7 @@ domain("forum.gitlab.com"),
 domain("forum.glyphsapp.com"),
 domain("forum.ionicframework.com"),
 domain("forum.keyboardmaestro.com"),
+domain("forum.level1techs.com"),
 domain("forum.mattermost.org"),
 domain("forum.snapcraft.io"),
 domain("forum.sublimetext.com"),
@@ -65,7 +66,7 @@ regexp("https?://discourse\\.\\S*") {
   }
   .d-header .panel, .cat .dropdown-header, .topic-body, .topic-body.highlighted,
   .docked .d-header .title-wrapper, .badge-category-bg + .badge-category,
-  .fa[style*="background"] {
+  .fa[style*="background"], #main, .topic-area, .full-width, #topic-title {
     background: transparent !important;
   }
   .d-header, .badge-card .badge-icon, div.poll .results .bar-back, #top-navbar,
