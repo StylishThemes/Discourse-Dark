@@ -61,7 +61,7 @@ regexp("https?://discourse\\.\\S*") {
   :root {
     --main-color: /*[[main-color]]*/;
   }
-  body {
+  html, body {
     background: #181818 !important;
     color: #ddd !important;
   }
