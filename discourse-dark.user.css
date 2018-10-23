@@ -88,7 +88,7 @@ regexp("https?://discourse\\.\\S*") {
   .select-kit-header, .select-box-kit-header, .select-kit-collection,
   .select-box-kit-collection, .select-kit .select-kit-collection,
   .select-kit-filter, .select-box-kit-filter, .d-editor-textarea-wrapper,
-  .user-preferences .bio-composer, div.ac-wrap {
+  .user-preferences .bio-composer, div.ac-wrap, #sticky-footer {
     background: #222 !important;
     color: #ddd !important;
     border-color: #444 !important;
