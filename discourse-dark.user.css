@@ -113,7 +113,7 @@ regexp("https?://discourse\\.\\S*") {
   }
   li.select-box-kit-row, .menu-panel .category-link:hover,
   .menu-panel ul.menu-links li a:hover, .menu-panel ul li.heading a:hover,
-  .badge-category {
+  .badge-category, #share-link {
     background-color: #333 !important;
   }
   .placeholder-text, .placeholder-avatar, .topic-list > thead,
