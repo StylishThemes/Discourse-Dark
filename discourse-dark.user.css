@@ -67,7 +67,8 @@ regexp("https?://discourse\\.\\S*") {
   }
   .d-header .panel, .cat .dropdown-header, .topic-body, .topic-body.highlighted,
   .docked .d-header .title-wrapper, .badge-category-bg + .badge-category,
-  .fa[style*="background"], #main, .topic-area, .full-width, #topic-title {
+  .fa[style*="background"], #main, .topic-area, .full-width, #topic-title,
+  .presence-users {
     background: transparent !important;
   }
   .d-header, .badge-card .badge-icon, div.poll .results .bar-back, #top-navbar,
@@ -78,7 +79,7 @@ regexp("https?://discourse\\.\\S*") {
   .topic-list .topic-list-item-separator td span,
   .user-preferences .bio-composer .d-editor-preview,
   .edit-category-tab-topic-template .d-editor-preview, .about .details,
-  .user-main .about .secondary, .badge-card {
+  .user-main .about .secondary, .badge-card, #topic-progress {
     background: #181818 !important;
     border-color: #444 !important;
   }
@@ -118,7 +119,8 @@ regexp("https?://discourse\\.\\S*") {
   }
   .placeholder-text, .placeholder-avatar, .topic-list > thead,
   body .dropdown-header, .topic-map .buttons .btn, .badge-notification.clicks,
-  nav.post-controls button.d-hover, .select2-results .select2-highlighted {
+  nav.post-controls button.d-hover, .select2-results .select2-highlighted,
+  #topic-progress .bg {
     background: #333 !important;
     color: #aaa !important;
     border-color: #444 !important;
