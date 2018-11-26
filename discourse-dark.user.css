@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Discourse Dark
-@version      1.0.35
+@version      1.0.36
 @description  Darken Discourse forums
 @namespace    StylishThemes
 @author       StylishThemes
@@ -48,6 +48,7 @@ domain("forums.sonarr.tv"),
 domain("forums.spongepowered.org"),
 domain("forums.swift.org"),
 domain("forums.urbackup.org"),
+domain("forums.woot.com"),
 domain("meta.discourse.org"),
 domain("platform.github.community"),
 domain("talk.commonmark.org"),
