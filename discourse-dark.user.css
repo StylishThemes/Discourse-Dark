@@ -57,6 +57,8 @@ domain("twittercommunity.com"),
 domain("ubuntu-mate.community"),
 domain("users.rust-lang.org"),
 domain("zegist.com"),
+url-prefix("https://nomadlist.com/forum/"),
+url-prefix("https://nomadlist.com/top-bar.php?iframe=yes"),
 url-prefix("https://www.freecodecamp.org/forum/"),
 url-prefix("https://www.sitepoint.com/community/"),
 regexp("https?://discourse\\.\\S*") {
@@ -81,7 +83,7 @@ regexp("https?://discourse\\.\\S*") {
   .topic-list .topic-list-item-separator td span,
   .user-preferences .bio-composer .d-editor-preview,
   .edit-category-tab-topic-template .d-editor-preview, .about .details,
-  .user-main .about .secondary, .badge-card, #topic-progress {
+  .user-main .about .secondary, .badge-card, #topic-progress, .top-bar {
     background: #181818 !important;
     border-color: #444 !important;
   }
@@ -206,7 +208,7 @@ regexp("https?://discourse\\.\\S*") {
   .latest-topic-list-item, .extra-info .badge-category,
   .post-links-container .post-links, .topic-list tr.topic-list-item td,
   .topic-list > tbody, .search-container .search-advanced .search-info, div.poll,
-  div.poll .poll-info, div.poll .poll-buttons {
+  div.poll .poll-info, div.poll .poll-buttons, .topic-list thead tr {
     border-color: #444 !important;
   }
   #reply-control, .badge-category-bg, .badge-category-parent-bg {
