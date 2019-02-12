@@ -69,6 +69,9 @@ regexp("https?://discourse\\.\\S*") {
     background: #181818 !important;
     color: #ddd !important;
   }
+  .d-header .title #site-logo {
+    filter: invert(100%) hue-rotate(180deg) contrast(200%);
+  }
   .d-header .panel, .cat .dropdown-header, .topic-body, .topic-body.highlighted,
   .docked .d-header .title-wrapper, .badge-category-bg + .badge-category,
   .fa[style*="background"], #main, .topic-area, .full-width, #topic-title,
@@ -93,7 +96,7 @@ regexp("https?://discourse\\.\\S*") {
   .select-kit-header, .select-box-kit-header, .select-kit-collection,
   .select-box-kit-collection, .select-kit .select-kit-collection,
   .select-kit-filter, .select-box-kit-filter, .d-editor-textarea-wrapper,
-  .user-preferences .bio-composer, div.ac-wrap, #sticky-footer {
+  .user-preferences .bio-composer, div.ac-wrap, #sticky-footer, .feedback-popup {
     background: #222 !important;
     color: #ddd !important;
     border-color: #444 !important;
@@ -208,7 +211,8 @@ regexp("https?://discourse\\.\\S*") {
   .latest-topic-list-item, .extra-info .badge-category,
   .post-links-container .post-links, .topic-list tr.topic-list-item td,
   .topic-list > tbody, .search-container .search-advanced .search-info, div.poll,
-  div.poll .poll-info, div.poll .poll-buttons, .topic-list thead tr {
+  div.poll .poll-info, div.poll .poll-buttons, .topic-list thead tr,
+  .feedback-popup input, .feedback-popup textarea {
     border-color: #444 !important;
   }
   #reply-control, .badge-category-bg, .badge-category-parent-bg {
