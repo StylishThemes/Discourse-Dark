@@ -35,6 +35,7 @@ domain("forum.ionicframework.com"),
 domain("forum.keyboardmaestro.com"),
 domain("forum.level1techs.com"),
 domain("forum.mattermost.org"),
+domain("forum.sentry.io"),
 domain("forum.snapcraft.io"),
 domain("forum.sublimetext.com"),
 domain("forum.syncthing.net"),
@@ -117,7 +118,8 @@ regexp("https?://discourse\\.\\S*") {
     color: #aaa !important;
     border-color: #444 !important;
   }
-  .select2-drop-mask, #list-area .contents .topic-list-item:nth-child(2n) {
+  .select2-drop-mask, #list-area .contents .topic-list-item:nth-child(2n),
+  .moderator .regular > .cooked {
     background: rgba(34, 34, 34, .5) !important;
   }
   li.select-box-kit-row, .menu-panel .category-link:hover,
@@ -370,7 +372,8 @@ domain("meta.discourse.org") {
     border-color: #444 !important;
   }
 }
-@-moz-document domain("forums.urbackup.org"),
+@-moz-document domain("forum.sentry.io"),
+domain("forums.urbackup.org"),
 domain("internals.rust-lang.org"),
 domain("talk.commonmark.org"),
 domain("users.rust-lang.org") {
