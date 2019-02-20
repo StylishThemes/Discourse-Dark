@@ -8,7 +8,7 @@
   "homepage": "https://github.com/StylishThemes/Discourse-Dark",
   "main": "discourse-dark.user.css",
   "devDependencies": {
-    "eslint": "^5.14.0",
+    "eslint": "^5.14.1",
     "eslint-config-silverwind": "^2.0.14",
     "fs-extra": "^7.0.1",
     "perfectionist": "^2.4.0",
