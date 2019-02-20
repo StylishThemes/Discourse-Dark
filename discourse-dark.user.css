@@ -71,8 +71,13 @@ regexp("https?://discourse\\.\\S*") {
     background: #181818 !important;
     color: #ddd !important;
   }
-  .d-header .title #site-logo {
-    filter: invert(100%) hue-rotate(180deg) contrast(200%);
+  .title img[src*="6acc4f0b979dd3eda9da74bfaf6a6a4bcb27bc3e.png"]#site-logo,
+  .title img[src*="41aea38170214b7a8609fd7e359f5a5231e48438.png"]#site-logo {
+    filter: none !important;
+  }
+  .title img[src*="78e19580f89104d24727f57682c4c61f3afb60cc.png"]#site-logo,
+  .title img[src*="purism-logo-with-text-5470x1120px-transparent-gradient.png"]#site-logo {
+    filter: invert(100%) hue-rotate(180deg) contrast(200%) !important;
   }
   .d-header .panel, .cat .dropdown-header, .topic-body, .topic-body.highlighted,
   .docked .d-header .title-wrapper, .badge-category-bg + .badge-category,
