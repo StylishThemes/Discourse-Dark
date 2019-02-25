@@ -86,29 +86,30 @@ regexp("https?://discourse\\.\\S*") {
   .title img[src*="918fd0c172578c27d581659f7fc33ff44b5eef16.png"]#site-logo {
     filter: invert(100%) hue-rotate(180deg) contrast(200%) !important;
   }
-	.title img[src*="logo.png"]#site-logo,
+  .title img[src*="logo.png"]#site-logo,
   .title img[src*="8face4f042af3c4bb878acbdb3b8369b606af21f.svg"]#site-logo,
   .title img[src*="3c3ae50b834d2bb056667dd0af706ffd01753959.png"]#site-logo {
     filter: invert(100%) hue-rotate(180deg) !important;
-	}
+  }
   .title img[src*="b0f0eca7da0011fb8ff89afbd3a6ef73f910399a.png"]#site-logo {
     filter: invert(100%) hue-rotate(180deg) brightness(70%) !important;
-	}
+  }
   .d-header .panel, .cat .dropdown-header, .topic-body, .topic-body.highlighted,
   .docked .d-header .title-wrapper, .badge-category-bg + .badge-category,
-  .fa[style*="background"], #main, .topic-area, .full-width, #topic-title,
-  .presence-users {
+  .fa[style*="background"], #main, .topic-area, .full-width:not(.woot-banner),
+  #topic-title, .presence-users {
     background: transparent !important;
   }
   .d-header, .badge-card .badge-icon, div.poll .results .bar-back, #top-navbar,
-  #mate-footer {
+  #mate-footer, .woot-banner-featured-nav, div.top-panel {
     background: #111 !important;
   }
   .primary, #reply-control, .bootbox.modal,
   .topic-list .topic-list-item-separator td span,
   .user-preferences .bio-composer .d-editor-preview,
   .edit-category-tab-topic-template .d-editor-preview, .about .details,
-  .user-main .about .secondary, .badge-card, #topic-progress, .top-bar {
+  .user-main .about .secondary, .badge-card, #topic-progress, .top-bar,
+  .zegist-earn, .home-banner, .title .search-header, .latest-topic-list {
     background: #181818 !important;
     border-color: #444 !important;
   }
@@ -118,10 +119,25 @@ regexp("https?://discourse\\.\\S*") {
   .select-kit-header, .select-box-kit-header, .select-kit-collection,
   .select-box-kit-collection, .select-kit .select-kit-collection,
   .select-kit-filter, .select-box-kit-filter, .d-editor-textarea-wrapper,
-  .user-preferences .bio-composer, div.ac-wrap, #sticky-footer, .feedback-popup {
+  .user-preferences .bio-composer, div.ac-wrap, #sticky-footer, .feedback-popup,
+  .d-header .sp-logo-container > .sp-logo-menu > .sp-logo-dropdown,
+  .d-header .sp-logo-container > .sp-logo-menu > .sp-logo-dropdown li,
+  #sp-logo-dropdown {
     background: #222 !important;
     color: #ddd !important;
     border-color: #444 !important;
+  }
+  .list-controls .category-breadcrumb li.bullet > .badge-category {
+    background: #333 !important;
+    color: #ddd !important;
+  }
+  .woot-banner-featured-nav .btn,
+  .d-header .sp-logo-container > .sp-logo-menu > .sp-logo-dropdown li:hover,
+  #sp-logo-dropdown li:not(.active):hover {
+    background: #333 !important;
+  }
+  #sp-logo-dropdown .active a {
+    color: #333 !important;
   }
   blockquote, aside.quote > div, aside.quote > blockquote, a.mention,
   a.mention-group, .menu-panel, .emoji-picker, .composer-popup,
@@ -144,7 +160,8 @@ regexp("https?://discourse\\.\\S*") {
   }
   li.select-box-kit-row, .menu-panel .category-link:hover,
   .menu-panel ul.menu-links li a:hover, .menu-panel ul li.heading a:hover,
-  .badge-category, #share-link {
+  .badge-category, #share-link, .d-header-icons .icon:hover,
+  .d-header-icons .icon:focus {
     background-color: #333 !important;
   }
   .placeholder-text, .placeholder-avatar, .topic-list > thead,
@@ -175,8 +192,11 @@ regexp("https?://discourse\\.\\S*") {
   .stats-section li.linked-stat a, .user-main .about .secondary dd,
   /* syntax theme */
   .hljs-subst, .hljs-request, .hljs-status, .hljs-keyword,
-  .javascript .hljs-title, .nginx .hljs-title {
+  .javascript .hljs-title, .nginx .hljs-title, .topic-list .topic-excerpt {
     color: #aaa !important;
+  }
+  .menu-panel li.category-link a:hover {
+    filter: brightness(110%) !important;
   }
   input, select, textarea, .fps-result .blurb .search-highlight,
   .user-navigation .nav-stacked a.active,
@@ -202,7 +222,8 @@ regexp("https?://discourse\\.\\S*") {
   .list-controls .category-dropdown-menu .home, .pihole-nav-link-container a,
   .category-list tbody .category h3 a[href], div.poll li[data-poll-option-id],
   /* Fix Mozilla Brazil category text color */
-  .badge-category-bg[style*="background-color: #00683"] + span[style*="color: #000000"] {
+  .badge-category-bg[style*="background-color: #00683"] + span[style*="color: #000000"],
+  .menu-panel a, a.widget-link.show-help, #sp-logo-dropdown a {
     color: #ccc !important;
   }
   .pihole-nav-link-container a:hover, .pihole-nav-link-container a:focus {
@@ -238,7 +259,7 @@ regexp("https?://discourse\\.\\S*") {
   .feedback-popup input, .feedback-popup textarea {
     border-color: #444 !important;
   }
-  #reply-control, .badge-category-bg, .badge-category-parent-bg {
+  #reply-control, .badge-category-bg, .badge-category-parent-bg, #copyright {
     border: #444 1px solid !important;
   }
   /* Advanced Search Bar*/
@@ -268,7 +289,8 @@ regexp("https?://discourse\\.\\S*") {
   .btn-primary, .open .grippie {
     background-color: #182030 !important;
   }
-  #banner, .btn-primary:hover, .alert.alert-info {
+  #banner, .btn-primary:hover, .alert.alert-info,
+  .category-list [data-category-id="7"]:not(.no-logo):not(.has-description) {
     background-color: #273045 !important;
   }
   .user-menu .notifications li, .badge-notification.new-posts,
@@ -278,8 +300,13 @@ regexp("https?://discourse\\.\\S*") {
   .alert.alert-info.clickable {
     color: #9daccc;
   }
+  .category-description, .topics .value, .topics .unit {
+    color: #ddd !important;
+  }
   /* green */
-  .alert.alert-success, .modal.history-modal ins, .modal.history-modal .diff-ins {
+  .alert.alert-success, .modal.history-modal ins, .modal.history-modal .diff-ins,
+  .category-list [data-category-id="6"]:not(.no-logo):not(.has-description),
+  .category-list [data-category-id="13"]:not(.no-logo):not(.has-description) {
     background-color: #152 !important;
   }
   .post-info .wiki, .post-info .last-wiki-edit {
@@ -296,10 +323,21 @@ regexp("https?://discourse\\.\\S*") {
   nav.post-controls button.like.d-hover i {
     color: #f11 !important;
   }
+  .category-list [data-category-id="14"]:not(.no-logo):not(.has-description) {
+    background-color: #2e6c5f !important;
+  }
+  /* pink */
+  .category-list [data-category-id="1"]:not(.no-logo):not(.has-description) {
+    background-color: #792240 !important;
+  }
   /* yellow */
   .select2-results li em, .modal.history-modal span.edit-reason,
-  .select-kit .select-kit-row.is-selected {
+  .select-kit .select-kit-row.is-selected,
+  .category-list [data-category-id="3"]:not(.no-logo):not(.has-description) {
     background: #261d08 !important;
+  }
+  .category-list [data-category-id="3"]:not(.no-logo):not(.has-description) {
+    background: #4c420e !important;
   }
   /* highlights */
   a, a:hover, a:active, a:visited,
