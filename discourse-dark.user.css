@@ -72,13 +72,28 @@ regexp("https?://discourse\\.\\S*") {
     color: #ddd !important;
   }
   .title img[src*="6acc4f0b979dd3eda9da74bfaf6a6a4bcb27bc3e.png"]#site-logo,
-  .title img[src*="41aea38170214b7a8609fd7e359f5a5231e48438.png"]#site-logo {
+  .title img[src*="41aea38170214b7a8609fd7e359f5a5231e48438.png"]#site-logo,
+  .title img[src*="1051fd74d1dcbc3ad4220b43007fcab5287272b0.png"]#site-logo {
     filter: none !important;
   }
+  .title img[src*="ce36afe8d176c3116ad64f882401f9ce520ef4a6.png"]#site-logo {
+    filter: brightness(125%) !important;
+  }
   .title img[src*="78e19580f89104d24727f57682c4c61f3afb60cc.png"]#site-logo,
-  .title img[src*="purism-logo-with-text-5470x1120px-transparent-gradient.png"]#site-logo {
+  .title img[src*="purism-logo-with-text-5470x1120px-transparent-gradient.png"]#site-logo,
+  .title img[src*="0d7ab3b633e07bf8ec99bdc18e22ad89d8934801.png"]#site-logo,
+  .title img[src*="c730c31678f67a03234677a420414ad8cfe2b551.png"]#site-logo,
+  .title img[src*="918fd0c172578c27d581659f7fc33ff44b5eef16.png"]#site-logo {
     filter: invert(100%) hue-rotate(180deg) contrast(200%) !important;
   }
+	.title img[src*="logo.png"]#site-logo,
+  .title img[src*="8face4f042af3c4bb878acbdb3b8369b606af21f.svg"]#site-logo,
+  .title img[src*="3c3ae50b834d2bb056667dd0af706ffd01753959.png"]#site-logo {
+    filter: invert(100%) hue-rotate(180deg) !important;
+	}
+  .title img[src*="b0f0eca7da0011fb8ff89afbd3a6ef73f910399a.png"]#site-logo {
+    filter: invert(100%) hue-rotate(180deg) brightness(70%) !important;
+	}
   .d-header .panel, .cat .dropdown-header, .topic-body, .topic-body.highlighted,
   .docked .d-header .title-wrapper, .badge-category-bg + .badge-category,
   .fa[style*="background"], #main, .topic-area, .full-width, #topic-title,
