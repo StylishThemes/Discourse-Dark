@@ -27,7 +27,6 @@
     "perfectionist": "npx perfectionist discourse-dark.user.css discourse-dark.user.css --indentSize 2 --maxAtRuleLength 250",
     "stylelint": "npx stylelint --quiet --color -- discourse-dark.user.css",
     "test": "npm run eslint && npm run stylelint",
-    "update": "updates -cu && npm install",
-    "usercss": "node tools/update-usercss.js"
+    "update": "updates -cu && npm install"
   }
 }
