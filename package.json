@@ -10,9 +10,8 @@
   "devDependencies": {
     "eslint": "^5.14.1",
     "eslint-config-silverwind": "^2.0.14",
-    "fs-extra": "^7.0.1",
     "perfectionist": "^2.4.0",
-    "semver": "^5.6.0",
+    "ver": "^4.2.0",
     "stylelint": "^9.10.1",
     "stylelint-config-standard": "^18.2.0",
     "updates": "^7.1.1"
@@ -22,11 +21,11 @@
     "clean": "npm run perfectionist && node tools/fix-perfectionist.js",
     "eslint": "eslint --quiet --color tools/*.js",
     "lint": "npm run eslint && npm run stylelint",
-    "major": "node tools/bump-version.js major && git add . && npm version -f major",
-    "minor": "node tools/bump-version.js minor && git add . && npm version -f minor",
-    "patch": "node tools/bump-version.js patch && git add . && npm version -f patch",
-    "perfectionist": "perfectionist discourse-dark.user.css discourse-dark.user.css --indentSize 2 --maxAtRuleLength 250",
-    "stylelint": "stylelint --quiet --color -- discourse-dark.user.css",
+    "major": "npx ver -p major discourse-dark.user.css",
+    "minor": "npx ver -p minor discourse-dark.user.css",
+    "patch": "npx ver -p patch discourse-dark.user.css",
+    "perfectionist": "npx perfectionist discourse-dark.user.css discourse-dark.user.css --indentSize 2 --maxAtRuleLength 250",
+    "stylelint": "npx stylelint --quiet --color -- discourse-dark.user.css",
     "test": "npm run eslint && npm run stylelint",
     "update": "updates -cu && npm install",
     "usercss": "node tools/update-usercss.js"
