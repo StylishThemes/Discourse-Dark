@@ -226,6 +226,10 @@ regexp("https?://discourse\\.\\S*") {
   .menu-panel a, a.widget-link.show-help, #sp-logo-dropdown a {
     color: #ccc !important;
   }
+  .cooked .labels span {
+    background: #555 !important;
+    color: #ddd !important;
+  }
   .pihole-nav-link-container a:hover, .pihole-nav-link-container a:focus {
     color: #fff !important;
   }
