@@ -9,12 +9,12 @@
   "main": "discourse-dark.user.css",
   "devDependencies": {
     "eslint": "^5.14.1",
-    "eslint-config-silverwind": "^2.0.14",
+    "eslint-config-silverwind": "^2.1.0",
     "perfectionist": "^2.4.0",
-    "ver": "^4.2.0",
     "stylelint": "^9.10.1",
-    "stylelint-config-standard": "^18.2.0",
-    "updates": "^7.1.1"
+    "stylelint-config-standard": "^18.3.0",
+    "updates": "^7.1.1",
+    "ver": "^4.2.0"
   },
   "scripts": {
     "authors": "bash tools/authors",
