@@ -230,7 +230,8 @@ regexp("https?://discourse\\.\\S*") {
     background: #555 !important;
     color: #ddd !important;
   }
-  .pihole-nav-link-container a:hover, .pihole-nav-link-container a:focus {
+  .pihole-nav-link-container a:hover, .pihole-nav-link-container a:focus,
+  .topic-title {
     color: #fff !important;
   }
   /* syntax theme */
