@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "eslint": "^5.16.0",
-    "eslint-config-silverwind": "^3.0.1",
+    "eslint-config-silverwind": "^3.0.2",
     "perfectionist": "^2.4.0",
     "stylelint": "^10.0.1",
     "stylelint-config-standard": "^18.3.0",
@@ -28,7 +28,7 @@
     "minor": "npx ver -p minor discourse-dark.user.css",
     "patch": "npx ver -p patch discourse-dark.user.css",
     "perfectionist": "npx perfectionist discourse-dark.user.css discourse-dark.user.css --indentSize 2 --maxAtRuleLength 250",
-    "stylelint": "npx stylelint --quiet --color -- discourse-dark.user.css",
+    "stylelint": "npx stylelint  --color -- discourse-dark.user.css",
     "test": "npm run eslint && npm run stylelint",
     "update": "npx updates -cu && npm install"
   }
