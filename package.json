@@ -7,6 +7,9 @@
   "repository": "https://github.com/StylishThemes/Discourse-Dark",
   "homepage": "https://github.com/StylishThemes/Discourse-Dark",
   "main": "discourse-dark.user.css",
+  "engines": {
+    "node": ">=10"
+  },
   "devDependencies": {
     "eslint": "^5.16.0",
     "eslint-config-silverwind": "^3.0.1",
