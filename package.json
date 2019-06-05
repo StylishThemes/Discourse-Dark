@@ -12,12 +12,12 @@
   },
   "devDependencies": {
     "eslint": "^5.16.0",
-    "eslint-config-silverwind": "^3.0.2",
+    "eslint-config-silverwind": "^3.0.3",
     "perfectionist": "^2.4.0",
     "stylelint": "^10.0.1",
     "stylelint-config-standard": "^18.3.0",
-    "updates": "^8.0.3",
-    "ver": "^4.3.0"
+    "updates": "^8.1.0",
+    "ver": "^4.4.1"
   },
   "scripts": {
     "authors": "bash tools/authors",
