@@ -29,6 +29,7 @@ domain("discuss.ocaml.org"),
 domain("education.github.community"),
 domain("internals.rust-lang.org"),
 domain("forum.breadtopia.com"),
+domain("forum.endeavouros.com"),
 domain("forum.f-droid.org"),
 domain("forum.gitlab.com"),
 domain("forum.glyphsapp.com"),
@@ -488,5 +489,25 @@ domain("discuss.ocaml.org"),
 domain("forum.f-droid.org") {
   #site-logo.logo-big {
     filter: invert(100%) hue-rotate(180deg) brightness(.9) !important;
+  }
+}
+
+@-moz-document domain("forum.endeavouros.com") {
+   #site-logo.logo-big {
+    filter: invert(100%) hue-rotate(180deg) brightness(.9) !important;
+  }
+  .custom-header-links .headerLink a, .names span a, .topic-list td,
+  .badge-posts[href], .topic-map .map .number, .topic-map h4,
+  .topic-meta-data .post-info a, .topic-body .reply-to-tab,
+  .timeline-container a, .timeline-container .timeline-ago,
+  nav.post-controls a, nav.post-controls button,
+  .menu-panel b.topics-count, .user-info .user-detail .username a {
+    color: var(--main-color) !important;
+  }
+  .topic-map h3, table th, .user-info .user-detail .name {
+    color: #999 !important;
+  }
+  .topic-map .avatars, .topic-map .links, .topic-map .information {
+    color: #aaa;
   }
 }
