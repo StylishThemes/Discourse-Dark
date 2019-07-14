@@ -491,7 +491,6 @@ domain("forum.f-droid.org") {
     filter: invert(100%) hue-rotate(180deg) brightness(.9) !important;
   }
 }
-
 @-moz-document domain("forum.endeavouros.com") {
    #site-logo.logo-big {
     filter: invert(100%) hue-rotate(180deg) brightness(.9) !important;
