@@ -25,6 +25,7 @@ domain("discuss.codemirror.net"),
 domain("discuss.elastic.co"),
 domain("discuss.flexget.com"),
 domain("discuss.howtogeek.com"),
+domain("discuss.huel.com"),
 domain("discuss.ocaml.org"),
 domain("education.github.community"),
 domain("internals.rust-lang.org"),
@@ -486,6 +487,8 @@ domain("users.rust-lang.org") {
 @-moz-document domain("community.home-assistant.io"),
 domain("discourse.pi-hole.net"),
 domain("discourse.trueos.org"),
+domain("discourse.huel.com"),
+domain("discuss.huel.com"),
 domain("discuss.ocaml.org"),
 domain("forum.f-droid.org") {
   #site-logo.logo-big {
