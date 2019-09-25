@@ -101,7 +101,7 @@ regexp("https?://discourse\\.\\S*") {
   .d-header .panel, .cat .dropdown-header, .topic-body, .topic-body.highlighted,
   .docked .d-header .title-wrapper, .badge-category-bg + .badge-category,
   .fa[style*="background"], #main, .topic-area, .full-width:not(.woot-banner),
-  #topic-title, .presence-users {
+  #topic-title, .presence-users, #main-outlet {
     background: transparent !important;
   }
   .d-header, .badge-card .badge-icon, div.poll .results .bar-back, #top-navbar,
