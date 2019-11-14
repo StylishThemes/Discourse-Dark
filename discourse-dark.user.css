@@ -37,6 +37,7 @@ domain("forum.glyphsapp.com"),
 domain("forum.ionicframework.com"),
 domain("forum.keyboardmaestro.com"),
 domain("forum.level1techs.com"),
+domain("forum.manjaro.org"),
 domain("forum.mattermost.org"),
 domain("forum.sentry.io"),
 domain("forum.snapcraft.io"),
@@ -101,7 +102,8 @@ regexp("https?://discourse\\.\\S*") {
   .d-header .panel, .cat .dropdown-header, .topic-body, .topic-body.highlighted,
   .docked .d-header .title-wrapper, .badge-category-bg + .badge-category,
   .fa[style*="background"], #main, .topic-area, .full-width:not(.woot-banner),
-  #topic-title, .presence-users, #main-outlet {
+  #topic-title, .presence-users, #main-outlet, #list-area, .topic-list,
+  .topic-body {
     background: transparent !important;
   }
   .d-header, .badge-card .badge-icon, div.poll .results .bar-back, #top-navbar,
@@ -136,7 +138,8 @@ regexp("https?://discourse\\.\\S*") {
     word-break: break-all;
     overflow-wrap: break-word;
   }
-  .list-controls .category-breadcrumb li.bullet > .badge-category {
+  .list-controls .category-breadcrumb li.bullet > .badge-category,
+  .discourse-tag.box {
     background: #333 !important;
     color: #ddd !important;
   }
@@ -232,7 +235,9 @@ regexp("https?://discourse\\.\\S*") {
   .category-list tbody .category h3 a[href], div.poll li[data-poll-option-id],
   /* Fix Mozilla Brazil category text color */
   .badge-category-bg[style*="background-color: #00683"] + span[style*="color: #000000"],
-  .menu-panel a, a.widget-link.show-help, #sp-logo-dropdown a {
+  .menu-panel a, a.widget-link.show-help, #sp-logo-dropdown a, a.hashtag,
+  a.hashtag:visited, a.hashtag:hover, .category-box-heading a[href],
+  .topic-list th, td {
     color: #ccc !important;
   }
   .cooked .labels span {
@@ -270,7 +275,7 @@ regexp("https?://discourse\\.\\S*") {
   .post-links-container .post-links, .topic-list tr.topic-list-item td,
   .topic-list > tbody, .search-container .search-advanced .search-info, div.poll,
   div.poll .poll-info, div.poll .poll-buttons, .topic-list thead tr,
-  .feedback-popup input, .feedback-popup textarea {
+  .feedback-popup input, .feedback-popup textarea, .category-box-inner {
     border-color: #444 !important;
   }
   #reply-control, .badge-category-bg, .badge-category-parent-bg, #copyright {
