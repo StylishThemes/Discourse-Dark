@@ -17,16 +17,16 @@
     "stylelint": "^11.1.1",
     "stylelint-config-standard": "^19.0.0",
     "updates": "^9.0.1",
-    "ver": "^5.1.2"
+    "versions": "7.0.3"
   },
   "scripts": {
     "authors": "bash tools/authors",
     "clean": "npm run perfectionist && node tools/fix-perfectionist.js",
     "eslint": "eslint --quiet --color tools/*.js",
     "lint": "npm run eslint && npm run stylelint",
-    "major": "npx ver -p major discourse-dark.user.css",
-    "minor": "npx ver -p minor discourse-dark.user.css",
-    "patch": "npx ver -p patch discourse-dark.user.css",
+    "major": "versions -C -p major discourse-dark.user.css",
+    "minor": "versions -C -p minor discourse-dark.user.css",
+    "patch": "versions -C -p patch discourse-dark.user.css",
     "perfectionist": "npx perfectionist discourse-dark.user.css discourse-dark.user.css --indentSize 2 --maxAtRuleLength 250",
     "stylelint": "npx stylelint  --color -- discourse-dark.user.css",
     "test": "npm run eslint && npm run stylelint",
