@@ -577,9 +577,6 @@ domain("community.gitpod.io") {
   }
 }
 @-moz-document domain("forum.endeavouros.com") {
-  #site-logo.logo-big {
-    filter: invert(100%) hue-rotate(180deg) brightness(.9) !important;
-  }
   .custom-header-links .headerLink a, .names span a, .topic-list td,
   .badge-posts[href], .topic-map .map .number, .topic-map h4,
   .topic-meta-data .post-info a, .topic-body .reply-to-tab,
