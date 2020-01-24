@@ -162,8 +162,7 @@ regexp("https?://discourse\\.\\S*") {
   .topic-list > tbody > tr.topic-list-item,
   .list-controls .category-dropdown-menu, .select2-results .select2-no-results,
   .select2-results .select2-searching, .select2-results .select2-selection-limit,
-  .details, .user-content, .topic-map,
-  .drop-down-visible .d-header-icons .active .icon,
+  .user-content, .topic-map, .drop-down-visible .d-header-icons .active .icon,
   .drop-down-visible .d-header .icons .active .icon,
   .drop-down-mode .d-header-icons .active .icon, .user-stream .item,
   .user-stream .user-stream-item {
@@ -302,6 +301,10 @@ regexp("https?://discourse\\.\\S*") {
   .feedback-popup input, .feedback-popup textarea, .category-box-inner {
     border-color: #444 !important;
   }
+  .login-modal #login-form + #login-buttons,
+  .create-account #login-form + #login-buttons {
+    border-color: #444;
+  }
   #reply-control, .badge-category-bg, .badge-category-parent-bg, #copyright {
     border: #444 1px solid !important;
   }
@@ -369,6 +372,11 @@ regexp("https?://discourse\\.\\S*") {
   .modal.history-modal .diff-del, nav.post-controls button.like.d-hover {
     background-color: #911 !important;
   }
+  .search-container .search-advanced .search-notice .fps-invalid {
+    background-color: #500;
+    border: 1px solid #d11;
+    color: #f11;
+  }
   .d-icon-d-liked, nav.post-controls button.has-like,
   nav.post-controls button.has-like .fa-heart,
   nav.post-controls button.has-like .fa-heart-o,
@@ -395,6 +403,15 @@ regexp("https?://discourse\\.\\S*") {
   a, a:hover, a:active, a:visited,
   body #topic .topic-body .contents div.cooked a:not([class]) {
     color: var(--main-color); /* not important */
+  }
+  .select-kit.combo-box .select-kit-header.is-focused, input[type="text"]:focus,
+  input[type="password"]:focus, input[type="datetime"]:focus,
+  input[type="datetime-local"]:focus, input[type="date"]:focus,
+  input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
+  input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus,
+  input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus {
+    border: 1px solid var(--main-color);
+    box-shadow: 0 0 6px 0 var(--main-color);
   }
   .atom-io-navigation a:hover, .topic-list .topic-list-item-separator td span,
   .timeline-container .topic-timeline .timeline-last-read i.progress {
@@ -543,7 +560,7 @@ domain("community.gitpod.io") {
   }
 }
 @-moz-document domain("forum.endeavouros.com") {
-   #site-logo.logo-big {
+  #site-logo.logo-big {
     filter: invert(100%) hue-rotate(180deg) brightness(.9) !important;
   }
   .custom-header-links .headerLink a, .names span a, .topic-list td,
