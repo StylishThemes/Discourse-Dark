@@ -100,6 +100,23 @@ regexp("https?://discourse\\.\\S*") {
   .title img[src*="b0f0eca7da0011fb8ff89afbd3a6ef73f910399a.png"]#site-logo {
     filter: invert(100%) hue-rotate(180deg) brightness(70%) !important;
   }
+  .placeholder-animation {
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background: #2d2d2d;
+    background: linear-gradient(to right, #2d2d2d 10%, #373737 18%, #2d2d2d 33%);
+  }
+  @keyframes placeHolderShimmer {
+    0% {
+      background-position: -1000px 0;
+    }
+    100% {
+      background-position: 1100px 0;
+    }
+  }
   .d-header .panel, .cat .dropdown-header, .topic-body, .topic-body.highlighted,
   .docked .d-header .title-wrapper, .badge-category-bg + .badge-category,
   .fa[style*="background"], #main, .topic-area, .full-width:not(.woot-banner),
