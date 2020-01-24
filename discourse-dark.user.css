@@ -501,8 +501,9 @@ domain("discourse.trueos.org"),
 domain("discourse.huel.com"),
 domain("discuss.huel.com"),
 domain("discuss.ocaml.org"),
-domain("forum.f-droid.org") {
-  #site-logo.logo-big {
+domain("forum.f-droid.org"),
+domain("community.gitpod.io") {
+  #site-logo.logo-big, #site-logo.logo-small {
     filter: invert(100%) hue-rotate(180deg) brightness(.9) !important;
   }
 }
