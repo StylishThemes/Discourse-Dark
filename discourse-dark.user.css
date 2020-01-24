@@ -220,7 +220,19 @@ regexp("https?://discourse\\.\\S*") {
   #reply-control .wmd-controls .d-editor-preview a:not(.mention):not(.mention-group),
   #reply-control .wmd-controls .d-editor-preview a:not(.mention):not(.mention-group):active,
   #reply-control .wmd-controls .d-editor-preview a:not(.mention):not(.mention-group):hover,
-  #reply-control .wmd-controls .d-editor-preview a:not(.mention):not(.mention-group):visited {
+  #reply-control .wmd-controls .d-editor-preview a:not(.mention):not(.mention-group):visited,
+  #user-card h3.email, #user-card h3 .desc, #user-card h3 a,
+  #group-card h3.email, #group-card h3 .desc, #group-card h3 a, #user-card h1 a,
+  #user-card h2 a, #group-card h1 a, #group-card h2 a, #user-card, #group-card,
+  .badge-card .badge-contents .badge-info,
+  .badge-card .badge-contents .badge-link,
+  .user-info.medium.badge-info .granted-on, .user-info .user-detail .name,
+  .user-info .user-detail .username a,
+  .select-kit.dropdown-select-box.period-chooser .period-chooser-header h2.selected-name .date-section,
+  .select-kit.dropdown-select-box.period-chooser .period-chooser-row .date-section,
+  .select-kit.combo-box.category-drop .select-kit-row[data-value="all-categories"],
+  .select-kit.combo-box.category-drop .select-kit-row[data-value="no-categories"],
+  .names span a {
     color: #ccc; /* not important */
   }
   .title, .d-icon, .alert, #banner, #site-text-logo, .topic-count,
@@ -238,7 +250,8 @@ regexp("https?://discourse\\.\\S*") {
   .badge-category-bg[style*="background-color: #00683"] + span[style*="color: #000000"],
   .menu-panel a, a.widget-link.show-help, #sp-logo-dropdown a, a.hashtag,
   a.hashtag:visited, a.hashtag:hover, .category-box-heading a[href],
-  .topic-list th, td {
+  .topic-list th, td,
+  .select-kit .select-kit-row.is-highlighted .top-date-string {
     color: #ccc !important;
   }
   .cooked .labels span {
@@ -514,9 +527,9 @@ domain("community.gitpod.io") {
   .custom-header-links .headerLink a, .names span a, .topic-list td,
   .badge-posts[href], .topic-map .map .number, .topic-map h4,
   .topic-meta-data .post-info a, .topic-body .reply-to-tab,
-  .timeline-container a, .timeline-container .timeline-ago,
-  nav.post-controls a, nav.post-controls button,
-  .menu-panel b.topics-count, .user-info .user-detail .username a {
+  .timeline-container a, .timeline-container .timeline-ago, nav.post-controls a,
+  nav.post-controls button, .menu-panel b.topics-count,
+  .user-info .user-detail .username a {
     color: var(--main-color) !important;
   }
   .topic-map h3, table th, .user-info .user-detail .name {
