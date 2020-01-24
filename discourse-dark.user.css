@@ -591,4 +591,7 @@ domain("community.gitpod.io") {
   .topic-map .avatars, .topic-map .links, .topic-map .information {
     color: #aaa;
   }
+  td[style="border-color: #231F20"] {
+    border-color: #555 !important;
+  }
 }
