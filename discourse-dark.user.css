@@ -107,8 +107,11 @@ regexp("https?://discourse\\.\\S*") {
   .topic-body {
     background: transparent !important;
   }
-  .d-header, .badge-card .badge-icon, div.poll .results .bar-back, #top-navbar,
-  #mate-footer, .woot-banner-featured-nav, div.top-panel {
+  .badge-card .badge-icon {
+    background: transparent;
+  }
+  .d-header, div.poll .results .bar-back, #top-navbar, #mate-footer,
+  .woot-banner-featured-nav, div.top-panel {
     background: #111 !important;
   }
   .primary, #reply-control, .bootbox.modal,
@@ -116,7 +119,8 @@ regexp("https?://discourse\\.\\S*") {
   .user-preferences .bio-composer .d-editor-preview,
   .edit-category-tab-topic-template .d-editor-preview, .about .details,
   .user-main .about .secondary, .badge-card, #topic-progress, .top-bar,
-  .zegist-earn, .home-banner, .title .search-header, .latest-topic-list {
+  .zegist-earn, .home-banner, .title .search-header, .latest-topic-list,
+  .details {
     background: #181818 !important;
     border-color: #444 !important;
   }
@@ -194,6 +198,9 @@ regexp("https?://discourse\\.\\S*") {
   nav.post-controls .like-button:hover button.d-hover {
     background: #444 !important;
   }
+  nav.post-controls .double-button:hover button {
+    background: #333;
+  }
   .emoji-picker .section-group button.emoji:hover,
   .emoji-picker .results button.emoji:hover {
     background-color: #444 !important;
@@ -207,6 +214,9 @@ regexp("https?://discourse\\.\\S*") {
   .hljs-subst, .hljs-request, .hljs-status, .hljs-keyword,
   .javascript .hljs-title, .nginx .hljs-title, .topic-list .topic-excerpt {
     color: #aaa !important;
+  }
+  .categories-and-latest .discourse-tags, .categories-and-top .discourse-tags {
+    background: #162645;
   }
   .menu-panel li.category-link a:hover {
     filter: brightness(110%) !important;
@@ -294,6 +304,15 @@ regexp("https?://discourse\\.\\S*") {
   }
   #reply-control, .badge-category-bg, .badge-category-parent-bg, #copyright {
     border: #444 1px solid !important;
+  }
+  #user-card .card-content, #group-card .card-content {
+    background: #282828;
+  }
+  #user-card .badge-section .user-badge,
+  #user-card .badge-section .more-user-badges a {
+    background: #303030;
+    border: 1px solid #555;
+    color: #ddd;
   }
   /* Advanced Search Bar*/
   .search-container .search-advanced-sidebar .search-advanced-filters {
@@ -388,6 +407,9 @@ regexp("https?://discourse\\.\\S*") {
   div.menu-links-header a:hover, .menu-panel li a:hover, .menu-panel li a:focus,
   .menu-panel li.heading a:hover, .menu-panel li.heading a:focus {
     background-color: var(--main-color) !important;
+  }
+  .select-kit .select-kit-row.is-highlighted {
+    background: var(--main-color) !important;
   }
   .nav-pills > li.active > a, .nav-pills > li > a.active,
   .topic-list .topic-list-item-separator td,
