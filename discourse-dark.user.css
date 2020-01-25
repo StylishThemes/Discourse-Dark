@@ -556,6 +556,11 @@ domain("meta.discourse.org") {
     background: #222 !important;
     border-color: #444 !important;
   }
+  .dropdown-menu li > a:hover, .dropdown-menu .active > a,
+  .dropdown-menu .active > a:hover {
+    color: #ccc;
+    background-color: #303030;
+  }
   body .dropdown-header {
     background: none !important;
   }
