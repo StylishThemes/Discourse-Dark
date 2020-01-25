@@ -126,8 +126,9 @@ regexp("https?://discourse\\.\\S*") {
   .d-header .panel, .cat .dropdown-header, .topic-body, .topic-body.highlighted,
   .docked .d-header .title-wrapper, .badge-category-bg + .badge-category,
   .fa[style*="background"], #main, .topic-area, .full-width:not(.woot-banner),
-  #topic-title, .presence-users, #main-outlet, #list-area, .topic-list,
-  .topic-body {
+  #topic-title, .presence-users, #list-area, .topic-list, .topic-body,
+  .btn.btn-flat, .discourse-no-touch .btn-flat.close:hover,
+  .discourse-no-touch .btn-flat.close.btn-hover {
     background: transparent !important;
   }
   .badge-card .badge-icon {
