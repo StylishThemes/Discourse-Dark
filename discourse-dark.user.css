@@ -117,10 +117,10 @@ regexp("https?://discourse\\.\\S*") {
       background-position: 1100px 0;
     }
   }
-  .d-modal.create-account .login-form:before {
+  .d-modal.create-account .login-form::before {
     background-image: linear-gradient(to top, transparent 0%, #222 100%);
   }
-  .d-modal.create-account .login-form:after {
+  .d-modal.create-account .login-form::after {
     background-image: linear-gradient(to bottom, transparent 0%, #222 100%);
   }
   .d-header .panel, .cat .dropdown-header, .topic-body, .topic-body.highlighted,
