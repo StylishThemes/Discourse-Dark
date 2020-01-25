@@ -525,6 +525,12 @@ regexp("https?://discourse\\.\\S*") {
   div[style*="border: 2px solid #c3c7ef;"] {
     border-color: #525ddc !important;
   }
+  #user-card .sixth-row .badge-section .user-badge,
+  #user-card .sixth-row .badge-section .more-user-badges a {
+    background: #303030;
+    border: 1px solid #555;
+    color: #ddd;
+  }
 }
 @-moz-document domain("discourse.slicer.org"),
 domain("discuss.codemirror.net"),
