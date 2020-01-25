@@ -619,6 +619,9 @@ domain("community.gitpod.io") {
   img[src*="f010ba1908e9f8f5e6b7a8d1792106b4fcbcd2c9.png"] {
     filter: invert(1) contrast(70%) brightness(.9);
   }
+  .custom-header-links .headerLink a {
+    color: #ddd;
+  }
 }
 @-moz-document domain("forum.endeavouros.com") {
   .custom-header-links .headerLink a, .names span a, .topic-list td,
