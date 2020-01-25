@@ -148,7 +148,7 @@ regexp("https?://discourse\\.\\S*") {
   .edit-category-tab-topic-template .d-editor-preview, .about .details,
   .user-main .about .secondary, .badge-card, #topic-progress, .top-bar,
   .zegist-earn, .home-banner, .title .search-header, .latest-topic-list,
-  .details {
+  .details, .user-content {
     background: #181818 !important;
     border-color: #444 !important;
   }
@@ -190,7 +190,7 @@ regexp("https?://discourse\\.\\S*") {
   .topic-list > tbody > tr.topic-list-item,
   .list-controls .category-dropdown-menu, .select2-results .select2-no-results,
   .select2-results .select2-searching, .select2-results .select2-selection-limit,
-  .user-content, .topic-map, .drop-down-visible .d-header-icons .active .icon,
+  .topic-map, .drop-down-visible .d-header-icons .active .icon,
   .drop-down-visible .d-header .icons .active .icon,
   .drop-down-mode .d-header-icons .active .icon, .user-stream .item,
   .user-stream .user-stream-item {
