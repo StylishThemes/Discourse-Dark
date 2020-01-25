@@ -615,6 +615,10 @@ domain("community.gitpod.io") {
   #site-logo.logo-big, #site-logo.logo-small {
     filter: invert(100%) hue-rotate(180deg) brightness(.9) !important;
   }
+  img[src*="6afef9981af88307eaf8519944c896e5c9a42245.png"],
+  img[src*="f010ba1908e9f8f5e6b7a8d1792106b4fcbcd2c9.png"] {
+    filter: invert(1) contrast(70%) brightness(.9);
+  }
 }
 @-moz-document domain("forum.endeavouros.com") {
   .custom-header-links .headerLink a, .names span a, .topic-list td,
