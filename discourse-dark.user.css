@@ -509,6 +509,11 @@ regexp("https?://discourse\\.\\S*") {
   #main-outlet {
     background: #282828;
   }
+  div[style="border-color: #5d979F; background-color: #5d979F;color: #FFFFFF;"] {
+    background-color: #467177 !important;
+    border-color: #5d979f !important;
+    color: #fff !important;
+  }
 }
 @-moz-document domain("discourse.roots.io") {
   div[style*="background: #ddf7e8"] {
