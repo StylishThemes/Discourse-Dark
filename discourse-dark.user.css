@@ -346,7 +346,8 @@ regexp("https?://discourse\\.\\S*") {
   #reply-control, .badge-category-bg, .badge-category-parent-bg, #copyright {
     border: #444 1px solid !important;
   }
-  #user-card .card-content, #group-card .card-content {
+  #user-card .card-content, #group-card .card-content,
+  .discourse-no-touch .sortable:hover, .group-details-container {
     background: #282828;
   }
   #user-card .badge-section .user-badge,
