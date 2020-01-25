@@ -232,6 +232,9 @@ regexp("https?://discourse\\.\\S*") {
   .emoji-picker .results button.emoji:hover {
     background-color: #444 !important;
   }
+  .group-info .group-info-full-name {
+    color: #aaa;
+  }
   .user-preferences .static, .discourse-tag.simple, .discourse-tag.simple:hover,
   .discourse-tag.simple:visited, .modal.history-modal .diff-ins,
   body .extra-info-wrapper .discourse-tag, .d-header .icons .active .icon:hover,
@@ -269,16 +272,17 @@ regexp("https?://discourse\\.\\S*") {
   .select-kit.dropdown-select-box.period-chooser .period-chooser-row .date-section,
   .select-kit.combo-box.category-drop .select-kit-row[data-value="all-categories"],
   .select-kit.combo-box.category-drop .select-kit-row[data-value="no-categories"],
-  .names span a {
+  .names span a, .user-main .about .secondary dt, .group-info .group-info-name,
+  table th, .topic-map .map .number {
     color: #ccc; /* not important */
   }
-  .title, .d-icon, .alert, #banner, #site-text-logo, .topic-count,
-  .alert.alert-info, .alert.alert-success, .alert.alert-error,
-  .nav-pills > li > a, #topic-title h1 a, .is-highlighted div,
-  .modal .modal-body p, .atom-io-navigation a, .composer-popup a.close,
-  .modal .modal-body label, .topic-list .sortable:hover,
-  .extra-info-wrapper .topic-link, nav.post-controls button.create,
-  .user-menu .notifications li span, .like-button:hover .like-count.d-hover,
+  .title, .d-icon, .alert, #banner, #site-text-logo, .alert.alert-info,
+  .alert.alert-success, .alert.alert-error, .nav-pills > li > a,
+  #topic-title h1 a, .is-highlighted div, .modal .modal-body p,
+  .atom-io-navigation a, .composer-popup a.close, .modal .modal-body label,
+  .topic-list .sortable:hover, .extra-info-wrapper .topic-link,
+  nav.post-controls button.create, .user-menu .notifications li span,
+  .like-button:hover .like-count.d-hover,
   .badge-wrapper.bullet span.badge-category,
   .badge-wrapper.bar span.badge-category,
   .list-controls .category-dropdown-menu .home, .pihole-nav-link-container a,
@@ -288,8 +292,12 @@ regexp("https?://discourse\\.\\S*") {
   .menu-panel a, a.widget-link.show-help, #sp-logo-dropdown a, a.hashtag,
   a.hashtag:visited, a.hashtag:hover, .category-box-heading a[href],
   .topic-list th, td,
-  .select-kit .select-kit-row.is-highlighted .top-date-string {
+  .select-kit .select-kit-row.is-highlighted .top-date-string,
+  .category-description, .topics .value, .topics .unit {
     color: #ccc !important;
+  }
+  #user-card h3, #group-card h3 {
+    color: #ddd;
   }
   .cooked .labels span {
     background: #555 !important;
@@ -383,9 +391,6 @@ regexp("https?://discourse\\.\\S*") {
   .alert.alert-info.clickable {
     color: #9daccc;
   }
-  .category-description, .topics .value, .topics .unit {
-    color: #ddd !important;
-  }
   /* green */
   .alert.alert-success, .modal.history-modal ins, .modal.history-modal .diff-ins,
   .category-list [data-category-id="6"]:not(.no-logo):not(.has-description),
@@ -429,7 +434,8 @@ regexp("https?://discourse\\.\\S*") {
   }
   /* highlights */
   a, a:hover, a:active, a:visited,
-  body #topic .topic-body .contents div.cooked a:not([class]) {
+  body #topic .topic-body .contents div.cooked a:not([class]),
+  .groups .group-link {
     color: var(--main-color); /* not important */
   }
   .select-kit.combo-box .select-kit-header.is-focused, input[type="text"]:focus,
@@ -541,6 +547,9 @@ domain("talk.commonmark.org"),
 domain("users.rust-lang.org") {
   .title img {
     filter: invert(80%) !important;
+  }
+  #navmenuv li a:hover {
+    color: #ddd;
   }
 }
 @-moz-document domain("forums.sonarr.tv") {
