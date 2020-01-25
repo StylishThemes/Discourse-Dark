@@ -558,12 +558,6 @@ domain("users.rust-lang.org") {
   }
 }
 @-moz-document url-prefix("https://www.sitepoint.com/community") {
-  .logomark svg > rect {
-    fill: #222 !important;
-  }
-  .logomark svg > path {
-    fill: #aaa !important;
-  }
   #main-outlet .container img {
     opacity: .5 !important;
   }
