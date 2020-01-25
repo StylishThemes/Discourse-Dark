@@ -338,7 +338,9 @@ regexp("https?://discourse\\.\\S*") {
     border-color: #444 !important;
   }
   .login-modal #login-form + #login-buttons,
-  .create-account #login-form + #login-buttons {
+  .create-account #login-form + #login-buttons, .top-sub-section li, tr,
+  .login-modal .create-account #login-buttons:not(.hidden) + .login-form,
+  .create-account .create-account #login-buttons:not(.hidden) + .login-form {
     border-color: #444;
   }
   #reply-control, .badge-category-bg, .badge-category-parent-bg, #copyright {
@@ -513,6 +515,9 @@ regexp("https?://discourse\\.\\S*") {
   }
   .nav-primary .nav > li:not(.active) > a:not(:hover) {
     color: #ddd !important;
+  }
+  div[style*="border: 2px solid #c3c7ef;"] {
+    border-color: #525ddc !important;
   }
 }
 @-moz-document domain("discourse.slicer.org"),
