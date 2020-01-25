@@ -556,6 +556,9 @@ domain("meta.discourse.org") {
     background: #222 !important;
     border-color: #444 !important;
   }
+  body .dropdown-header {
+    background: none !important;
+  }
 }
 @-moz-document domain("forum.sentry.io"),
 domain("forums.urbackup.org"),
