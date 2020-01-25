@@ -134,6 +134,10 @@ regexp("https?://discourse\\.\\S*") {
   .badge-card .badge-icon {
     background: transparent;
   }
+  #main-outlet {
+    background: #181818;
+    box-shadow: 0 .25em .25em 0 rgba(29, 29, 29, .5);
+  }
   .d-header, div.poll .results .bar-back, #top-navbar, #mate-footer,
   .woot-banner-featured-nav, div.top-panel {
     background: #111 !important;
@@ -492,6 +496,9 @@ regexp("https?://discourse\\.\\S*") {
 @-moz-document domain("discourse.mozilla.org") {
   .badge-category-bg, .badge-category-parent-bg {
     border: 0 !important;
+  }
+  #main-outlet {
+    background: #282828;
   }
 }
 @-moz-document domain("discourse.roots.io") {
