@@ -579,7 +579,7 @@ domain("users.rust-lang.org") {
 }
 @-moz-document domain("forums.sonarr.tv") {
   .banner {
-    background: #283045 !important;
+    background: #182030 !important;
   }
 }
 @-moz-document url-prefix("https://www.sitepoint.com/community") {
