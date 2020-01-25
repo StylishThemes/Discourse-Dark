@@ -589,7 +589,6 @@ domain("users.rust-lang.org") {
 }
 @-moz-document domain("community.home-assistant.io"),
 domain("discourse.pi-hole.net"),
-domain("discourse.trueos.org"),
 domain("discourse.huel.com"),
 domain("discuss.huel.com"),
 domain("discuss.ocaml.org"),
