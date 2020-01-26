@@ -166,6 +166,12 @@ regexp("https?://discourse\\.\\S*") {
     color: #ddd !important;
     border-color: #444 !important;
   }
+  .category-breadcrumb .single-select .select-kit-header,
+  #topic-footer-buttons .single-select .select-kit-header {
+    color: #eee;
+    background: #333;
+    border-color: #555;
+  }
   pre {
     white-space: pre-wrap;
     word-break: break-all;
