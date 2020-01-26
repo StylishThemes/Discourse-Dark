@@ -405,7 +405,7 @@ regexp("https?://discourse\\.\\S*") {
   }
   /* red */
   .btn-danger, .alert.alert-error, .modal.history-modal del,
-  .modal.history-modal .diff-del, nav.post-controls button.like.d-hover {
+  .modal.history-modal .diff-del {
     background-color: #911 !important;
   }
   .search-container .search-advanced .search-notice .fps-invalid {
@@ -416,7 +416,8 @@ regexp("https?://discourse\\.\\S*") {
   .d-icon-d-liked, nav.post-controls button.has-like,
   nav.post-controls button.has-like .fa-heart,
   nav.post-controls button.has-like .fa-heart-o,
-  nav.post-controls button.like.d-hover i {
+  nav.post-controls button.like.d-hover i,
+  nav.post-controls .double-button button.like.d-hover .d-icon {
     color: #f11 !important;
   }
   .category-list [data-category-id="14"]:not(.no-logo):not(.has-description) {
