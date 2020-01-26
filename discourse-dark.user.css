@@ -484,7 +484,7 @@ regexp("https?://discourse\\.\\S*") {
     border-color: var(--main-color) !important;
   }
   .timeline-container .topic-timeline .timeline-scrollarea {
-    border-color: rgba(var(--main-color-rgb, .7)) !important;
+    border-color: rgba(/*[[main-color-rgb]]*/, .5);
   }
   .d-header {
     box-shadow: none !important;
