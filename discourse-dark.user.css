@@ -510,10 +510,16 @@ regexp("https?://discourse\\.\\S*") {
   #main-outlet {
     background: #282828;
   }
-  div[style="border-color: #5d979F; background-color: #5d979F;color: #FFFFFF;"] {
-    background-color: #467177 !important;
-    border-color: #5d979f !important;
-    color: #fff !important;
+  .badge-category-bg {
+    filter: none !important;
+  }
+  .category-breadcrumb .single-select .select-kit-header .d-icon,
+  #topic-footer-buttons .single-select .select-kit-header .d-icon {
+    color: #eee !important;
+  }
+  #user-card .location-and-website .website-name a,
+  #user-card .location-and-website .location span {
+    color: #ccc;
   }
 }
 @-moz-document domain("discourse.roots.io") {
