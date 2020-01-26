@@ -542,10 +542,21 @@ regexp("https?://discourse\\.\\S*") {
 @-moz-document domain("discuss.codemirror.net"),
 domain("discuss.elastic.co"),
 domain("meta.discourse.org") {
+  #site-logo.logo-big, #site-logo.logo-small {
+    filter: invert(100%) hue-rotate(180deg) brightness(.9) !important;
+  }
   .title img {
     --shadow: rgba(80, 80, 80, .3);
     filter: drop-shadow(1px 1px 1px var(--shadow)) drop-shadow(-1px 1px 1px var(--shadow)) drop-shadow(1px -1px 1px var(--shadow)) drop-shadow(-1px -1px 1px var(--shadow));
   }
+  #banner {
+    border: 1px solid #273045 !important;
+    background: #273045 !important;
+  }
+  #copyright .links a, p a {
+    color: #eee;
+  }
+}
 @-moz-document domain("discourse.slicer.org") {
   #banner img {
     filter: invert(1) contrast(70%) !important;
