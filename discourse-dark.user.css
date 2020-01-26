@@ -152,13 +152,13 @@ regexp("https?://discourse\\.\\S*") {
     background: #181818 !important;
     border-color: #444 !important;
   }
-  code, pre code, p > code, input, .btn, .message, #reply-control input,
+  code, pre code, p > code, input, .message, #reply-control input,
   #reply-control textarea, #reply-control select, #reply-control .tag-chooser,
   .badge-notification, .modal-inner-container, .select2-drop, .select-kit-body,
-  .select-kit-header, .select-box-kit-header, .select-kit-collection,
-  .select-box-kit-collection, .select-kit .select-kit-collection,
-  .select-kit-filter, .select-box-kit-filter, .d-editor-textarea-wrapper,
-  .user-preferences .bio-composer, div.ac-wrap, #sticky-footer, .feedback-popup,
+  .select-box-kit-header, .select-kit-collection, .select-box-kit-collection,
+  .select-kit .select-kit-collection, .select-kit-filter, .select-box-kit-filter,
+  .d-editor-textarea-wrapper, .user-preferences .bio-composer, div.ac-wrap,
+  #sticky-footer, .feedback-popup,
   .d-header .sp-logo-container > .sp-logo-menu > .sp-logo-dropdown,
   .d-header .sp-logo-container > .sp-logo-menu > .sp-logo-dropdown li,
   #sp-logo-dropdown {
