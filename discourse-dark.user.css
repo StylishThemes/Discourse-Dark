@@ -665,3 +665,27 @@ domain("community.gitpod.io") {
     outline: 1px solid #555;
   }
 }
+@-moz-document regexp("^https://forums\.woot\.com/(?!embed/comments).*$") {
+  .category-list [data-category-id="1"] {
+    background: #440018;
+  }
+  .category-list [data-category-id="3"] {
+    background: #321;
+  }
+  .category-list [data-category-id="6"], .category-list [data-category-id="13"] {
+    background: #002800;
+  }
+  .category-list [data-category-id="7"] {
+    background: #182030;
+  }
+  .category-list [data-category-id="14"] {
+    background: #003328;
+  }
+  .btn {
+    background: #333;
+    color: #ccc !important;
+  }
+  .btn[href] {
+    color: #0090d9 !important;
+  }
+}
