@@ -657,3 +657,11 @@ domain("community.gitpod.io") {
     border-color: #555 !important;
   }
 }
+@-moz-document regexp("^https://community\.influxdata\.com/(?!embed/comments).*$") {
+  .banner-box {
+    background-color: #181818;
+  }
+  div.col3.single-box {
+    outline: 1px solid #555;
+  }
+}
