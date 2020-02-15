@@ -239,6 +239,10 @@ regexp("https?://discourse\\.\\S*") {
   .categories-and-latest .discourse-tags, .categories-and-top .discourse-tags {
     background: #162645;
   }
+  .h-creative {
+    color: #36c !important;
+    background-color: #111;
+  }
   .menu-panel li.category-link a:hover {
     filter: brightness(110%) !important;
   }
@@ -456,8 +460,9 @@ regexp("https?://discourse\\.\\S*") {
   .nav-pills > li.active > a, .nav-pills > li > a.active,
   .timeline-container .btn-primary,
   .timeline-container .topic-timeline .timeline-handle,
-  div.menu-links-header a:hover, .menu-panel li a:hover, .menu-panel li a:focus,
-  .menu-panel li.heading a:hover, .menu-panel li.heading a:focus {
+  div.menu-links-header a:hover, .menu-panel li a:not(.badge-wrapper):hover,
+  .menu-panel li a:not(.badge-wrapper):focus, .menu-panel li.heading a:hover,
+  .menu-panel li.heading a:focus {
     background-color: var(--main-color) !important;
   }
   .select-kit .select-kit-row.is-highlighted {
