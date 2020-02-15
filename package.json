@@ -23,8 +23,7 @@
   "scripts": {
     "authors": "bash tools/authors",
     "clean": "npm run perfectionist && node tools/clean.js",
-    "eslint": "eslint tools/*.js",
-    "lint": "npm run eslint && npm run stylelint",
+    "lint": "eslint tools/*.js && npm run stylelint discourse-dark.user.css",
     "major": "versions -C -p major discourse-dark.user.css",
     "minor": "versions -C -p minor discourse-dark.user.css",
     "patch": "versions -C -p patch discourse-dark.user.css",
