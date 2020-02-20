@@ -29,7 +29,7 @@
     "patch": "versions -C -p patch discourse-dark.user.css",
     "perfectionist": "npx perfectionist discourse-dark.user.css discourse-dark.user.css --indentSize 2 --maxAtRuleLength 250",
     "stylelint": "stylelint discourse-dark.user.css",
-    "test": "npm run eslint && npm run stylelint",
+    "test": "npm run lint",
     "update": "updates -cuU && npm install"
   }
 }
