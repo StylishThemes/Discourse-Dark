@@ -567,12 +567,120 @@ url-prefix("https://www.sitepoint.com/community/") {
     }
   }
 }
-@-moz-document domain("discourse.mozilla.org") {
+@-moz-document regexp("^https://docs\.spongepowered\.org/(?!embed/comments).*$") {
+  .input-group-addon {
+    color: var(--main-color);
+    background-color: #282828;
+    border: 1px solid #555;
+  }
+  .languages img, .old-version img {
+    border: 1px solid #555;
+  }
+  .wy-nav-content-wrap {
+    background: #181818;
+  }
+  .wy-alert.wy-alert-warning .wy-alert-title,
+  .rst-content .wy-alert-warning.note .wy-alert-title,
+  .rst-content .attention .wy-alert-title, .rst-content .caution .wy-alert-title,
+  .rst-content .wy-alert-warning.danger .wy-alert-title,
+  .rst-content .wy-alert-warning.error .wy-alert-title,
+  .rst-content .wy-alert-warning.hint .wy-alert-title,
+  .rst-content .wy-alert-warning.important .wy-alert-title,
+  .rst-content .wy-alert-warning.tip .wy-alert-title,
+  .rst-content .warning .wy-alert-title,
+  .rst-content .wy-alert-warning.seealso .wy-alert-title,
+  .rst-content .admonition-todo .wy-alert-title,
+  .wy-alert.wy-alert-warning .rst-content .admonition-title,
+  .rst-content .wy-alert.wy-alert-warning .admonition-title,
+  .rst-content .wy-alert-warning.note .admonition-title,
+  .rst-content .attention .admonition-title,
+  .rst-content .caution .admonition-title,
+  .rst-content .wy-alert-warning.danger .admonition-title,
+  .rst-content .wy-alert-warning.error .admonition-title,
+  .rst-content .wy-alert-warning.hint .admonition-title,
+  .rst-content .wy-alert-warning.important .admonition-title,
+  .rst-content .wy-alert-warning.tip .admonition-title,
+  .rst-content .warning .admonition-title,
+  .rst-content .wy-alert-warning.seealso .admonition-title,
+  .rst-content .admonition-todo .admonition-title {
+    background: #542;
+  }
+  .wy-alert.wy-alert-warning, .rst-content .wy-alert-warning.note,
+  .rst-content .attention, .rst-content .caution,
+  .rst-content .wy-alert-warning.danger, .rst-content .wy-alert-warning.error,
+  .rst-content .wy-alert-warning.hint, .rst-content .wy-alert-warning.important,
+  .rst-content .wy-alert-warning.tip, .rst-content .warning,
+  .rst-content .wy-alert-warning.seealso, .rst-content .admonition-todo {
+    background: #321;
+  }
+  .wy-alert.wy-alert-info .wy-alert-title, .rst-content .note .wy-alert-title,
+  .rst-content .wy-alert-info.attention .wy-alert-title,
+  .rst-content .wy-alert-info.caution .wy-alert-title,
+  .rst-content .wy-alert-info.danger .wy-alert-title,
+  .rst-content .wy-alert-info.error .wy-alert-title,
+  .rst-content .wy-alert-info.hint .wy-alert-title,
+  .rst-content .wy-alert-info.important .wy-alert-title,
+  .rst-content .wy-alert-info.tip .wy-alert-title,
+  .rst-content .wy-alert-info.warning .wy-alert-title,
+  .rst-content .seealso .wy-alert-title,
+  .rst-content .wy-alert-info.admonition-todo .wy-alert-title,
+  .wy-alert.wy-alert-info .rst-content .admonition-title,
+  .rst-content .wy-alert.wy-alert-info .admonition-title,
+  .rst-content .note .admonition-title,
+  .rst-content .wy-alert-info.attention .admonition-title,
+  .rst-content .wy-alert-info.caution .admonition-title,
+  .rst-content .wy-alert-info.danger .admonition-title,
+  .rst-content .wy-alert-info.error .admonition-title,
+  .rst-content .wy-alert-info.hint .admonition-title,
+  .rst-content .wy-alert-info.important .admonition-title,
+  .rst-content .wy-alert-info.tip .admonition-title,
+  .rst-content .wy-alert-info.warning .admonition-title,
+  .rst-content .seealso .admonition-title,
+  .rst-content .wy-alert-info.admonition-todo .admonition-title {
+    background: #346;
+  }
+  .wy-alert.wy-alert-info, .rst-content .note,
+  .rst-content .wy-alert-info.attention, .rst-content .wy-alert-info.caution,
+  .rst-content .wy-alert-info.danger, .rst-content .wy-alert-info.error,
+  .rst-content .wy-alert-info.hint, .rst-content .wy-alert-info.important,
+  .rst-content .wy-alert-info.tip, .rst-content .wy-alert-info.warning,
+  .rst-content .seealso, .rst-content .wy-alert-info.admonition-todo {
+    background: #182030;
+  }
+  .btn-neutral {
+    background-color: #333 !important;
+    color: #ccc !important;
+  }
+  .btn-neutral:hover {
+    background-color: #444 !important;
+    color: #ddd;
+  }
+  #license-icons, #license-icons:active, #license-icons:visited {
+    color: #555;
+  }
+  .rst-versions .rst-other-versions {
+    color: #aaa;
+  }
+  .wy-menu-vertical li.on a, .wy-menu-vertical li.current > a {
+    background: #181818;
+    border-color: #444;
+    color: #ddd;
+  }
+  .wy-menu-vertical li.on a:hover, .wy-menu-vertical li.current > a:hover,
+  .wy-menu-vertical li.current a:hover {
+    background: #282828;
+  }
+  .wy-menu-vertical li.current {
+    background: #282828;
+  }
+  .wy-menu-vertical li.current a {
+    color: #ddd;
+    border-right: solid 1px #444;
+  }
+}
+@-moz-document regexp("^https://(discourse)\.mozilla\.org/(?!embed/comments).*$") {
   .badge-category-bg, .badge-category-parent-bg {
     border: 0 !important;
-  }
-  #main-outlet {
-    background: #282828;
   }
   .badge-category-bg {
     filter: none !important;
@@ -735,27 +843,100 @@ domain("community.gitpod.io") {
     outline: 1px solid #555;
   }
 }
-@-moz-document regexp("^https://forums\.woot\.com/(?!embed/comments).*$") {
-  .category-list [data-category-id="1"] {
-    background: #440018;
+@-moz-document regexp("^https://forums\.puri\.sm/(?!embed/comments).*$") {
+  .moderator .clearfix > .topic-meta-data > .names span.user-title,
+  .moderator .nav-pills > .topic-meta-data > .names span.user-title,
+  .moderator .container > .topic-meta-data > .names span.user-title,
+  .moderator .wrap > .topic-meta-data > .names span.user-title {
+    background-color: #542;
+    color: #ccc;
   }
-  .category-list [data-category-id="3"] {
-    background: #321;
+}
+@-moz-document regexp("^https://nomadlist.com/(?!embed/comments).*$") {
+  .title img {
+    filter: invert(1) hue-rotate(180deg) !important;
   }
-  .category-list [data-category-id="6"], .category-list [data-category-id="13"] {
-    background: #002800;
+  .custom-header-links .headerLink a, .item-aux .text {
+    color: #aaa;
   }
-  .category-list [data-category-id="7"] {
-    background: #182030;
+  .sort-by select:hover, .sort-by select.active, .sort-by span {
+    color: #ccc;
   }
-  .category-list [data-category-id="14"] {
-    background: #003328;
+  .head-image .box {
+    background: #181818;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
   }
-  .btn {
+  html.grid-view .filter-actions {
+    background: linear-gradient(to bottom, rgba(24, 24, 24, .75) 1%, rgba(24, 24, 24, .5) 55%, transparent 100%);
+  }
+  .button, .by-a {
+    background-color: #282828;
+    border-color: #444;
+    color: #ccc;
+  }
+  .by-a:hover {
+    background: #333 !important;
+    color: #f00;
+  }
+  .button:hover {
+    background-color: #333;
+    border: 1px solid #555;
+  }
+  .sort-by select {
+    background: #282828;
+    border: 1px solid #444;
+  }
+  .action-select-sort-order {
+    background: #282828;
+    border-color: #444;
+  }
+  .action-select-sort-order:hover, .sort-by select:hover,
+  .currency-switcher-floater div:hover {
     background: #333;
-    color: #ccc !important;
   }
-  .btn[href] {
-    color: #0090d9 !important;
+  .grid-side .item.item-aux, .grid .item.item-aux, .grid-side,
+  .autocomplete-box div:first-of-type, .currency-switcher-floater div,
+  .modal-pay .left, .modal-pay-featured {
+    border-color: #444;
+  }
+  optgroup::before {
+    color: #ccc;
+  }
+  optgroup {
+    background-color: #181818;
+  }
+  .aux:hover {
+    background-color: #282828;
+    border: none;
+  }
+  input.search::placeholder {
+    color: #555;
+  }
+  input.search:focus::placeholder {
+    color: #555;
+  }
+  .autocomplete-box {
+    box-shadow: 0 5px 6px rgba(0, 0, 0, .25) !important;
+    border-color: #444;
+  }
+  .autocomplete-box div {
+    background: #191919;
+    color: #ccc;
+    border-bottom: 1px solid #444;
+  }
+  .autocomplete-box .action-follow svg, .autocomplete-box .action-favorite svg {
+    stroke: #666;
+    fill: #222;
+  }
+  .autocomplete-box div.hover, .autocomplete-box div:hover, .modal-pay {
+    background: #242424;
+  }
+  .currency-switcher-floater {
+    background: #282828;
+    color: #ccc;
+    border: 1px solid #444;
+  }
+  .modal-pay-backdrop {
+    background: rgba(24, 24, 24, .75);
   }
 }
