@@ -23,6 +23,7 @@ domain("discuss.flexget.com"),
 domain("discuss.howtogeek.com"),
 domain("discuss.huel.com"),
 domain("discuss.ocaml.org"),
+regexp("https?://discourse\\.\\S*/(?!embed/comments).*$"),
 domain("internals.rust-lang.org"),
 domain("bbs.boingboing.net"),
 domain("forum.syncthing.net"),
@@ -44,7 +45,6 @@ url-prefix("https://nomadlist.com/forum/"),
 url-prefix("https://nomadlist.com/top-bar.php?iframe=yes"),
 url-prefix("https://www.freecodecamp.org/forum/"),
 url-prefix("https://www.sitepoint.com/community/"),
-regexp("https?://discourse\\.\\S*") {
   :root {
     --main-color: /*[[main-color]]*/;
   }
