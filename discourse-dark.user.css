@@ -42,7 +42,7 @@
 ==/UserStyle== */
 @-moz-document regexp("^https://(forum|forums)\.(balena|infamous|sentry|snapcraft)\.io/(?!embed/comments).*$"),
 regexp("^https://community\\.(gitpod|home-assistant|influxdata|grafana|transifex|thunkable|letsencrypt|cloudflare|bitwarden|bevoya)\\.(com|org|io)/(?!embed/comments).*$"),
-regexp("^https://(forum|forums)\.(gitlab|ionicframework|woot|urbackup|swift|meteor|vuejs|talksurf|sublimetext|docker|mattermost|manjaro|level1techs|keyboardmaestro|ionicframeworitlab|f-droid|breadtopia|endeavouros)\\.(com|org)/(?!embed/comments).*$"),
+regexp("^https://(forum|forums)\\.(gitlab|ionicframework|woot|urbackup|swift|meteor|vuejs|talksurf|sublimetext|docker|mattermost|manjaro|level1techs|keyboardmaestro|ionicframeworitlab|f-droid|breadtopia|endeavouros)\\.(com|org)/(?!embed/comments).*$"),
 regexp("^https://(docs|forums)\.spongepowered\.org/(?!embed/comments).*$"),
 regexp("^https://(meta|talk)\.(discourse|commonmark)\.org/(?!embed/comments).*$"),
 regexp("^https://discuss\.(atom|codemirror|elastic|flexget|huel|ocaml)\.(io|org|co|com|net)/(?!embed/comments).*$"),
