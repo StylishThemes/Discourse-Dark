@@ -9,6 +9,35 @@
 @updateURL    https://raw.githubusercontent.com/StylishThemes/Discourse-Dark/master/discourse-dark.user.css
 @license      CC-BY-SA-4.0
 @advanced color main-color "Main color" #07c
+@advanced dropdown bg-choice "Background" {
+  crosshatch "Cross-Hatch" <<<EOT
+  url(https://camo.githubusercontent.com/5b8e4cd1a5ce69b6affa17ebd8e4aee00c147618/68747470733a2f2f7374796c6973687468656d65732e6769746875622e696f2f4769744875622d4461726b2f696d616765732f6261636b67726f756e64732f62672d63726f737368617463682e706e67) EOT;
+  uniform "Uniform Tile" <<<EOT
+  url(https://camo.githubusercontent.com/f83a9a60a2c64be0c88833ccb436e32a458cd2ce/68747470733a2f2f7374796c6973687468656d65732e6769746875622e696f2f4769744875622d4461726b2f696d616765732f6261636b67726f756e64732f62672d74696c652d756e69666f726d2e706e67) EOT;
+  random "Random Tile" <<<EOT
+  url(https://camo.githubusercontent.com/3beb850d8069e424480199a09899030c9e58e85f/68747470733a2f2f7374796c6973687468656d65732e6769746875622e696f2f4769744875622d4461726b2f696d616765732f6261636b67726f756e64732f62672d74696c65312e706e67) EOT;
+  custom "Custom" <<<EOT
+  var(--bg-custom) EOT;
+  none "None" <<<EOT
+  none EOT;
+}
+@advanced text bg-custom "Custom Background" "url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAAD1BMVEUREREREREAAAAREREWFhkN5cwCAAAABHRSTlNfGAAwFBG7CgAAACxJREFUeAFjYGJiZGBhhhMMYIIRTjCgcIE8VC4TKpeRmYEZiTtIzGNihhNMAJJAATdKr5xFAAAAAElFTkSuQmCC)"
+@advanced dropdown bg-options "Background image type" {
+  Tiled "Tiled" <<<EOT
+  background-repeat: repeat !important;
+  background-size: auto !important;
+  background-position: left top !important; EOT;
+  Fit window size "Fit window size" <<<EOT
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center top !important; EOT;
+}
+@advanced dropdown bg-attachment "Background image attachment" {
+  Scroll "Scroll" <<<EOT
+  scroll EOT;
+  Fixed "Fixed" <<<EOT
+  fixed EOT;
+}
 @preprocessor uso
 ==/UserStyle== */
 @-moz-document regexp("^https://(forum|forums)\.(balena|infamous|sentry|snapcraft)\.io/(?!embed/comments).*$"),
@@ -32,10 +61,19 @@ url-prefix("https://www.freecodecamp.org/forum/"),
 url-prefix("https://www.sitepoint.com/community/") {
   :root {
     --main-color: /*[[main-color]]*/;
+    --bg-custom: /*[[bg-custom]]*/;
+    --bg-img: /*[[bg-choice]]*/;
   }
-  html, body {
-    background: #181818 !important;
-    color: #ddd !important;
+  body, .table-heading {
+    background-color: #222 !important;
+    background-image: var(--bg-img) !important;
+    background-clip: border-box !important;
+    background-origin: padding-box !important;
+    background-attachment: /*[[bg-attachment]]*/ !important;
+    /*[[bg-options]]*/
+  }
+  #main-outlet {
+    box-shadow: 0 .25em .25em 0 rgba(29, 29, 29, .5);
   }
   .title img[src*="6acc4f0b979dd3eda9da74bfaf6a6a4bcb27bc3e.png"]#site-logo,
   .title img[src*="41aea38170214b7a8609fd7e359f5a5231e48438.png"]#site-logo,
@@ -93,10 +131,6 @@ url-prefix("https://www.sitepoint.com/community/") {
   }
   .badge-card .badge-icon {
     background: transparent;
-  }
-  #main-outlet {
-    background: #181818;
-    box-shadow: 0 .25em .25em 0 rgba(29, 29, 29, .5);
   }
   .d-header, div.poll .results .bar-back, #top-navbar, #mate-footer,
   .woot-banner-featured-nav, div.top-panel {
