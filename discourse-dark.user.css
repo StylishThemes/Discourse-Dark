@@ -429,7 +429,7 @@ url-prefix("https://www.sitepoint.com/community/") {
     border-color: #444 !important;
   }
   .login-modal #login-form + #login-buttons,
-  .create-account #login-form + #login-buttons, .top-sub-section li, tr,
+  .create-account #login-form + #login-buttons, .top-sub-section li,
   .login-modal .create-account #login-buttons:not(.hidden) + .login-form,
   .create-account .create-account #login-buttons:not(.hidden) + .login-form,
   .directory table td, .directory table th,
