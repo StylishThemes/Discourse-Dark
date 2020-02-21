@@ -478,6 +478,11 @@ url-prefix("https://www.sitepoint.com/community/") {
     border: 1px solid #555;
     color: #eee;
   }
+  .discourse-no-touch .embedded-posts .collapse-down:hover,
+  .discourse-no-touch .embedded-posts .collapse-up:hover {
+    background: #333;
+    color: #eee;
+  }
   .pika-single {
     color: #ccc;
     background: #222;
