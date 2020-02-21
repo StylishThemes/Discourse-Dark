@@ -300,7 +300,9 @@ url-prefix("https://www.sitepoint.com/community/") {
   .timeline-container .topic-timeline .timeline-ago, #login-form a,
   .discourse-no-touch .btn-flat.close:hover .d-icon,
   .discourse-no-touch .btn-flat.close.btn-hover .d-icon, .d-header-icons .d-icon,
-  .post-links-container ul li a[href] {
+  .post-links-container ul li a[href], .fps-result .blurb,
+  .fps-result .blurb .date,
+  .select-kit.combo-box.category-chooser .select-kit-row .topic-count {
     color: #aaa;
   }
   .user-preferences .static, .discourse-tag.simple, .discourse-tag.simple:hover,
