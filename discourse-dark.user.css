@@ -346,7 +346,7 @@ url-prefix("https://www.sitepoint.com/community/") {
   .latest-topic-list .table-heading,
   .timeline-container .topic-timeline .start-date,
   .timeline-container .topic-timeline .now-date, .btn .d-icon,
-  .topic-map .buttons .btn:hover .d-icon, html {
+  .topic-map .buttons .btn:hover .d-icon, html, .pika-table th {
     color: #ccc; /* not important */
   }
   .title, .alert, #banner, #site-text-logo, .alert.alert-info,
@@ -475,6 +475,30 @@ url-prefix("https://www.sitepoint.com/community/") {
     background: #333;
     border: 1px solid #555;
     color: #eee;
+  }
+  .pika-single {
+    color: #ccc;
+    background: #222;
+    border-color: #444;
+  }
+  .pika-label, .pika-button {
+    background: #222;
+    color: #ccc;
+  }
+  .is-today .pika-button {
+    color: var(--main-color);
+  }
+  .is-selected .pika-button {
+    color: #fff;
+    background: var(--main-color);
+    box-shadow: none;
+  }
+  .pika-button:hover {
+    color: #fff;
+    background: var(--main-color);
+  }
+  .pika-prev, .is-rtl .pika-next, .pika-next, .is-rtl .pika-prev {
+    filter: invert(1);
   }
   /* Advanced Search Bar*/
   .search-container .search-advanced-sidebar .search-advanced-filters {
