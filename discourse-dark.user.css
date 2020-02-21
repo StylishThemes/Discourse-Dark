@@ -81,6 +81,9 @@ url-prefix("https://www.sitepoint.com/community/") {
   #list-area .contents .topic-list-item:nth-child(2n) {
     background: #282828;
   }
+  .navigation-topics tbody tr:nth-child(2n+1) {
+    background: #202020 !important;
+  }
   #main-outlet {
     box-shadow: 0 .25em .25em 0 rgba(29, 29, 29, .5);
   }
@@ -145,6 +148,9 @@ url-prefix("https://www.sitepoint.com/community/") {
   .woot-banner-featured-nav, div.top-panel {
     background: #111 !important;
   }
+  .select-kit .no-content, .select-kit .is-loading {
+    background: #333;
+  }
   .primary, #reply-control, .bootbox.modal,
   .topic-list .topic-list-item-separator td span,
   .user-preferences .bio-composer .d-editor-preview,
@@ -164,6 +170,16 @@ url-prefix("https://www.sitepoint.com/community/") {
     background: #181818 !important;
     border-color: #444 !important;
     color: #ccc !important;
+  }
+  body input[type="text"]:focus, body input[type="password"]:focus,
+  body input[type="datetime"]:focus, body input[type="datetime-local"]:focus,
+  body input[type="date"]:focus, body input[type="month"]:focus,
+  body input[type="time"]:focus, body input[type="week"]:focus,
+  body input[type="number"]:focus, body input[type="email"]:focus,
+  body input[type="url"]:focus, body input[type="search"]:focus,
+  body input[type="tel"]:focus, body input[type="color"]:focus {
+    border-color: var(--main-color);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .3), 0 0 8px var(--main-color);
   }
   .autocomplete ul li a.selected {
     background: #182030;
@@ -268,11 +284,11 @@ url-prefix("https://www.sitepoint.com/community/") {
     background: #555 !important;
     color: #ddd !important;
   }
-  .autocomplete {
+  .autocomplete, #topic-progress-expanded {
     background: #282828;
     border-color: #444;
   }
-  .categories-and-latest .discourse-tags, .categories-and-top .discourse-tags {
+  .categories-and-top .discourse-tags {
     background: #162645;
   }
   .h-creative {
@@ -284,6 +300,9 @@ url-prefix("https://www.sitepoint.com/community/") {
   }
   .btn:hover, .discourse-no-touch .btn:hover, .discourse-no-touch .btn.btn-hover {
     background: #444;
+  }
+  .btn[disabled], .btn.disabled {
+    background: #404040;
   }
   .btn[disabled]:hover, .btn.disabled:hover,
   .discourse-no-touch .btn[disabled]:hover,
@@ -302,17 +321,23 @@ url-prefix("https://www.sitepoint.com/community/") {
   .discourse-no-touch .btn-flat.close.btn-hover .d-icon, .d-header-icons .d-icon,
   .post-links-container ul li a[href], .fps-result .blurb,
   .fps-result .blurb .date,
-  .select-kit.combo-box.category-chooser .select-kit-row .topic-count {
+  .select-kit.combo-box.category-chooser .select-kit-row .topic-count,
+  .category-description, .select-kit .d-icon {
     color: #aaa;
+  }
+  .badge-posts[href], .latest-topic-list-item .topic-last-activity a {
+    color: #bbb;
   }
   .user-preferences .static, .discourse-tag.simple, .discourse-tag.simple:hover,
   .discourse-tag.simple:visited, .modal.history-modal .diff-ins,
   body .extra-info-wrapper .discourse-tag, .d-header .icons .active .icon:hover,
   .drop-down-visible .d-header .icons .active .icon:hover,
-  .stats-section li.linked-stat a, .user-main .about .secondary dd,
+  .topic-list .topic-excerpt, .stats-section li.linked-stat a,
+  .user-main .about .secondary dd,
   /* syntax theme */
-  .hljs-subst, .hljs-request, .hljs-status, .hljs-keyword,
-  .javascript .hljs-title, .nginx .hljs-title, .topic-list .topic-excerpt {
+  .hljs-subst,
+  .hljs-request, .hljs-status, .hljs-keyword, .javascript .hljs-title,
+  .nginx .hljs-title {
     color: #aaa !important;
   }
   input, select, textarea, .fps-result .blurb .search-highlight,
@@ -367,8 +392,8 @@ url-prefix("https://www.sitepoint.com/community/") {
   .menu-panel a, a.widget-link.show-help, #sp-logo-dropdown a, a.hashtag,
   a.hashtag:visited, a.hashtag:hover, .category-box-heading a[href],
   .topic-list th, td,
-  .select-kit .select-kit-row.is-highlighted .top-date-string,
-  .category-description, .topics .value, .topics .unit {
+  .select-kit .select-kit-row.is-highlighted .top-date-string, .topics .value,
+  .topics .unit {
     color: #ccc !important;
   }
   #user-card h3, #group-card h3, .menu-panel b.topics-count, .topic-map h3,
@@ -412,7 +437,7 @@ url-prefix("https://www.sitepoint.com/community/") {
   .drop-down-mode .d-header-icons .active .icon:after {
     border-color: #222 !important;
   }
-  .topic-list > tbody, tbody, .table-heading {
+  .topic-list > tbody, tbody, .table-heading, .topic-list th, .topic-list td {
     border-color: #333;
   }
   hr, .d-header, .d-header .title, .modal-header, .modal-footer, .topic-avatar,
@@ -435,7 +460,8 @@ url-prefix("https://www.sitepoint.com/community/") {
   .directory table td, .directory table th,
   .login-modal #login-buttons:not(.hidden),
   .create-account #login-buttons:not(.hidden), .autocomplete ul li,
-  .modal.history-modal #revision {
+  .modal.history-modal #revision, #topic-closing-info,
+  .topic-list > tbody > tr:first-of-type, .topic-list > tbody > tr {
     border-color: #444;
   }
   .topic-list > tbody > tr:first-of-type {
@@ -599,7 +625,9 @@ url-prefix("https://www.sitepoint.com/community/") {
   body #topic .topic-body .contents div.cooked a:not([class]),
   .groups .group-link,
   .select-kit.combo-box .select-kit-collection .collection-header a,
-  aside.onebox .onebox-body a[href] {
+  aside.onebox .onebox-body a[href], #topic-progress,
+  .select-kit.combo-box.tag-drop .select-kit-row[data-value="all-tags"],
+  .select-kit.combo-box.tag-drop .select-kit-row[data-value="no-tags"] {
     color: var(--main-color); /* not important */
   }
   .select-kit.combo-box .select-kit-header.is-focused, input[type="text"]:focus,
@@ -833,7 +861,6 @@ url-prefix("https://www.sitepoint.com/community/") {
   }
 }
 @-moz-document domain("discuss.codemirror.net"),
-domain("discuss.elastic.co"),
 domain("meta.discourse.org") {
   #site-logo.logo-big, #site-logo.logo-small {
     filter: invert(100%) hue-rotate(180deg) brightness(.9) !important;
@@ -879,8 +906,7 @@ domain("meta.discourse.org") {
     background: none !important;
   }
 }
-@-moz-document domain("forum.sentry.io"),
-domain("forums.urbackup.org"),
+@-moz-document domain("forums.urbackup.org"),
 domain("internals.rust-lang.org"),
 domain("talk.commonmark.org"),
 domain("users.rust-lang.org") {
@@ -964,6 +990,40 @@ domain("community.gitpod.io") {
     outline: 1px solid #555;
   }
 }
+@-moz-document regexp("^https://community\.home-assistant\.io/(?!embed/comments).*$") {
+  .move-up button {
+    background: var(--main-color) !important;
+  }
+}
+@-moz-document regexp("^https://forum\.sentry\.io/(?!embed/comments).*$") {
+  .categories-list .category .category-description {
+    color: #8399da;
+  }
+  td[style="border-color: #231F20"] {
+    border-color: #555 !important;
+  }
+  span[style="background-color: #231F20;"] {
+    background-color: #888 !important;
+  }
+  .category-list tbody .category {
+    border-color: #444;
+  }
+}
+@-moz-document regexp("^https://discuss\.elastic\.co/(?!embed/comments).*$") {
+  #site-logo.logo-big, #site-logo.logo-small {
+    filter: invert(100%) hue-rotate(180deg) brightness(.9) !important;
+  }
+  .topic-list-main-link a.title, .topic-list .main-link a.title,
+  .latest-topic-list-item .main-link a.title,
+  .badge-wrapper.bullet span.badge-category, .category-name, .list-cell,
+  .table-heading, .category-list td, .category-list th, .category-description,
+  #topic-title h1 a, .select-kit .select-kit-header .selected-name {
+    color: #8399da !important;
+  }
+  .h-creative {
+    color: var(--main-color) !important;
+  }
+}
 @-moz-document regexp("^https://forums\.puri\.sm/(?!embed/comments).*$") {
   .moderator .clearfix > .topic-meta-data > .names span.user-title,
   .moderator .nav-pills > .topic-meta-data > .names span.user-title,
@@ -971,6 +1031,27 @@ domain("community.gitpod.io") {
   .moderator .wrap > .topic-meta-data > .names span.user-title {
     background-color: #542;
     color: #ccc;
+  }
+}
+@-moz-document regexp("^https://community\.cloudflare\.com/(?!embed/comments).*$") {
+  p, font[color="#404242"] {
+    color: #ccc;
+  }
+}
+@-moz-document regexp("^https://forum\.gitlab\.com/(?!embed/comments).*$") {
+  p, font[color="#404242"] {
+    color: #ccc;
+  }
+}
+@-moz-document regexp("^https://forum\.manjaro\.org/(?!embed/comments).*$") {
+  .categories-list .category .category-description {
+    color: #ccc;
+  }
+  #list-area, .topic-list, .topic-body {
+    border-top-color: #444;
+  }
+  td[style="border-color: #231F20"] {
+    border-left-color: #444 !important;
   }
 }
 @-moz-document regexp("^https://nomadlist.com/(?!embed/comments).*$") {
