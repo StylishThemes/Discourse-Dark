@@ -461,19 +461,29 @@ url-prefix("https://www.sitepoint.com/community/") {
     color: #9daccc;
   }
   /* green */
-  .alert.alert-success, .modal.history-modal ins, .modal.history-modal .diff-ins,
+  .alert.alert-success,
   .category-list [data-category-id="6"]:not(.no-logo):not(.has-description),
   .category-list [data-category-id="13"]:not(.no-logo):not(.has-description) {
     background-color: #152 !important;
+  }
+  .modal.history-modal ins {
+    background-color: #152;
+    color: #ddd;
+  }
+  .modal.history-modal .diff-ins {
+    background-color: #002800;
   }
   .post-info .wiki, .post-info .last-wiki-edit, .solved-panel,
   .post-controls .accepted, .fa.accepted, .accepted-text {
     color: #55a532 !important;
   }
   /* red */
-  .btn-danger, .alert.alert-error, .modal.history-modal del,
-  .modal.history-modal .diff-del {
-    background-color: #911 !important;
+  .btn-danger, .alert.alert-error, .modal.history-modal .diff-del {
+    background-color: #500 !important;
+  }
+  .modal.history-modal del {
+    background-color: #800 !important;
+    color: #ddd;
   }
   .search-container .search-advanced .search-notice .fps-invalid {
     background-color: #500;
