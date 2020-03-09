@@ -41,7 +41,7 @@
 @preprocessor uso
 ==/UserStyle== */
 @-moz-document regexp("^https://(forum|forums)\.(balena|infamous|sentry|snapcraft)\.io/(?!embed/comments).*$"),
-regexp("^https://community\\.(gitpod|home-assistant|influxdata|grafana|transifex|thunkable|letsencrypt|cloudflare|bitwarden|bevoya)\\.(com|org|io)/(?!embed/comments).*$"),
+regexp("^https://community\\.(signalusers|gitpod|home-assistant|influxdata|grafana|transifex|thunkable|letsencrypt|cloudflare|bitwarden|bevoya)\\.(com|org|io)/(?!embed/comments).*$"),
 regexp("^https://(forum|forums)\\.(gitlab|ionicframework|woot|urbackup|swift|meteor|vuejs|talksurf|sublimetext|docker|mattermost|manjaro|level1techs|keyboardmaestro|ionicframeworitlab|f-droid|breadtopia|endeavouros)\\.(com|org)/(?!embed/comments).*$"),
 regexp("^https://(docs|forums)\.spongepowered\.org/(?!embed/comments).*$"),
 regexp("^https://(meta|talk)\.(discourse|commonmark)\.org/(?!embed/comments).*$"),
@@ -1052,6 +1052,11 @@ domain("community.gitpod.io") {
   }
   td[style="border-color: #231F20"] {
     border-left-color: #444 !important;
+  }
+}
+@-moz-document regexp("^https://community\\.(signalusers)\\.org/(?!embed/comments).*$") {
+  .logo-big {
+    filter: invert(1) hue-rotate(180deg);
   }
 }
 @-moz-document regexp("^https://nomadlist.com/(?!embed/comments).*$") {
