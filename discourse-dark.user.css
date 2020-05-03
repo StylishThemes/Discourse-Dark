@@ -45,7 +45,7 @@ regexp("^https://community\\.(signalusers|gitpod|home-assistant|influxdata|grafa
 regexp("^https://(forum|forums)\\.(gitlab|ionicframework|woot|urbackup|swift|meteor|vuejs|talksurf|sublimetext|docker|mattermost|manjaro|level1techs|keyboardmaestro|ionicframeworitlab|f-droid|breadtopia|endeavouros)\\.(com|org)/(?!embed/comments).*$"),
 regexp("^https://(docs|forums)\.spongepowered\.org/(?!embed/comments).*$"),
 regexp("^https://(meta|talk)\.(discourse|commonmark)\.org/(?!embed/comments).*$"),
-regexp("^https://discuss\.(atom|codemirror|elastic|flexget|huel|ocaml)\.(io|org|co|com|net)/(?!embed/comments).*$"),
+regexp("^https://discuss\\.(rubyonrails|atom|codemirror|elastic|flexget|huel|ocaml)\\.(io|org|co|com|net)/(?!embed/comments).*$"),
 regexp("^https://(forum|forums)\.(syncthing|habitat|puri|sonarr|cfx)\.(net|sh|sm|tv|re)/(?!embed/comments).*$"),
 regexp("^https://(\w+\.ruby-forum|zegist)\.com/(?!embed/comments).*$"),
 regexp("^https://nomadlist.com/(?!embed/comments).*$"),
@@ -1057,6 +1057,35 @@ domain("community.gitpod.io") {
 @-moz-document regexp("^https://community\\.(signalusers)\\.org/(?!embed/comments).*$") {
   .logo-big {
     filter: invert(1) hue-rotate(180deg);
+  }
+}
+@-moz-document regexp("^https://discuss\.rubyonrails\.org/(?!embed/comments).*") {
+  .nav-pills > li a.active {
+    box-shadow: 0 3px 0 #f26e6e;
+    background-color: #c00 !important;
+  }
+  .custom-header-links .headerLink a:hover {
+    color: #eee;
+    border-bottom: 2px solid #eee;
+  }
+  .btn-primary {
+    color: #fff !important;
+    background: #c00 !important;
+  }
+  .discourse-no-touch .btn.btn-primary:not([disabled]):not(.disabled):hover,
+  .discourse-no-touch .btn.btn-primary:not([disabled]):not(.disabled).btn-hover {
+    background: #bf0303 !important;
+    color: #fff !important;
+  }
+  img[src*="more"] {
+    filter: invert(1);
+    mix-blend-mode: exclusion;
+  }
+  .user-stream .excerpt, .categories-list .category .category-description {
+    color: #ccc;
+  }
+  .user-secondary-navigation .nav-stacked a.active {
+    color: #eee;
   }
 }
 @-moz-document regexp("^https://nomadlist.com/(?!embed/comments).*$") {
