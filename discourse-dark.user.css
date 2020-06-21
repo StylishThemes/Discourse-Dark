@@ -152,6 +152,17 @@ url-prefix("https://www.sitepoint.com/community/") {
   .select-kit .no-content, .select-kit .is-loading {
     background: #333;
   }
+  .user-menu .quick-access-panel .d-icon,
+  .user-menu .quick-access-panel:hover .d-icon,
+  .menu-panel li a.widget-link .d-icon, .menu-panel li a.categories-link .d-icon,
+  .menu-panel li.heading a.widget-link .d-icon,
+  .menu-panel li.heading a.categories-link .d-icon,
+  .user-menu .quick-access-panel li span:first-child {
+    color: #ccc;
+  }
+  .user-menu .quick-access-panel li {
+    background: #182030;
+  }
   .user-menu .quick-access-panel .read {
     background: #111;
   }
@@ -268,6 +279,9 @@ url-prefix("https://www.sitepoint.com/community/") {
     color: #aaa !important;
     border-color: #444 !important;
   }
+  .user-menu .quick-access-panel {
+    border-top-color: #444;
+  }
   .select2-drop-mask, .moderator .regular > .cooked {
     background: rgba(34, 34, 34, .5) !important;
   }
@@ -278,6 +292,10 @@ url-prefix("https://www.sitepoint.com/community/") {
   .menu-panel ul li.heading a:hover, .badge-category, #share-link,
   .d-header-icons .icon:hover, .d-header-icons .icon:focus {
     background-color: #333 !important;
+  }
+  .menu-panel li a:hover, .menu-panel li a:focus, .menu-panel li.heading a:hover,
+  .menu-panel li.heading a:focus {
+    background-color: rgba(52, 52, 52, .4);
   }
   .placeholder-text, .placeholder-avatar, body .dropdown-header,
   nav.post-controls button.d-hover, .select2-results .select2-highlighted,
@@ -334,6 +352,10 @@ url-prefix("https://www.sitepoint.com/community/") {
   .h-creative {
     color: #36c !important;
     background-color: #111;
+  }
+  .menu-panel {
+    border: 1px solid #555;
+    background-color: #191919;
   }
   .menu-panel li.category-link a:hover {
     filter: brightness(110%) !important;
@@ -416,7 +438,9 @@ url-prefix("https://www.sitepoint.com/community/") {
   .timeline-container .topic-timeline .now-date, .btn .d-icon,
   .topic-map .buttons .btn:hover .d-icon, html, .pika-table th,
   .ring-first-notification, .discourse-no-touch .btn:hover .d-icon,
-  .discourse-no-touch .btn.btn-hover .d-icon {
+  .discourse-no-touch .btn.btn-hover .d-icon, .menu-panel li a.widget-link,
+  .menu-panel li a.categories-link, .menu-panel li.heading a.widget-link,
+  .menu-panel li.heading a.categories-link {
     color: #ccc; /* not important */
   }
   .title, .alert, #banner, #site-text-logo, .alert.alert-info,
@@ -432,9 +456,8 @@ url-prefix("https://www.sitepoint.com/community/") {
   .category-list tbody .category h3 a[href], div.poll li[data-poll-option-id],
   /* Fix Mozilla Brazil category text color */
   .badge-category-bg[style*="background-color: #00683"] + span[style*="color: #000000"],
-  .menu-panel a, a.widget-link.show-help, #sp-logo-dropdown a, a.hashtag,
-  a.hashtag:visited, a.hashtag:hover, .category-box-heading a[href],
-  .topic-list th, td,
+  a.widget-link.show-help, #sp-logo-dropdown a, a.hashtag, a.hashtag:visited,
+  a.hashtag:hover, .category-box-heading a[href], .topic-list th, td,
   .select-kit .select-kit-row.is-highlighted .top-date-string, .topics .value,
   .topics .unit,
   .btn:not(.btn-primary):not(.btn-danger):not(.widget-button):not(.btn-flat):not(.period-chooser-header),
@@ -474,7 +497,9 @@ url-prefix("https://www.sitepoint.com/community/") {
   .discourse-no-touch .btn-flat:hover .d-icon,
   .discourse-no-touch .btn-flat.btn-hover .d-icon,
   .d-header-icons .icon:hover .d-icon, .d-header-icons .icon:focus .d-icon,
-  .d-header-icons .icon:active {
+  .d-header-icons .icon:active,
+  .menu-panel li.category-link a:hover .category-name,
+  .menu-panel li.category-link a:focus .category-name, .menu-panel li a:hover {
     color: #eee;
   }
   .pihole-nav-link-container a:hover, .pihole-nav-link-container a:focus,
@@ -621,6 +646,11 @@ url-prefix("https://www.sitepoint.com/community/") {
   .user-menu .notifications li, .badge-notification.new-posts,
   .badge-notification.unread-posts {
     background-color: #303b55 !important;
+  }
+  .user-menu .quick-access-panel li:hover,
+  .user-menu .quick-access-panel li:focus {
+    background-color: #542;
+    outline: none;
   }
   .alert.alert-info.clickable {
     color: #9daccc;
