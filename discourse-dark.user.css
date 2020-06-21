@@ -64,7 +64,7 @@ url-prefix("https://www.sitepoint.com/community/") {
     --bg-custom: /*[[bg-custom]]*/;
     --bg-img: /*[[bg-choice]]*/;
   }
-  body, .table-heading {
+  body, .table-heading, html, #main-outlet {
     background-color: #222 !important;
     background-image: var(--bg-img) !important;
     background-clip: border-box !important;
@@ -150,6 +150,34 @@ url-prefix("https://www.sitepoint.com/community/") {
   }
   .select-kit .no-content, .select-kit .is-loading {
     background: #333;
+  }
+  .user-menu .quick-access-panel .read {
+    background: #111;
+  }
+  div.menu-links-header .menu-links-row {
+    border-color: #444;
+  }
+  div.menu-links-header .menu-links-row li a.active,
+  div.menu-links-header .menu-links-row li a.active:after {
+    border-color: #555;
+  }
+  .user-menu .quick-access-panel .show-all a:hover {
+    color: #ddd;
+    background: #282828;
+  }
+  div.menu-links-header a:hover, div.menu-links-header a:focus {
+    background-color: #182030;
+  }
+  .user-menu .quick-access-panel .show-all a {
+    color: #ccc;
+    background: #222;
+  }
+  div.menu-links-header .fa, div.menu-links-header a {
+    color: #ccc;
+  }
+  #topic-entrance {
+    border-color: #444;
+    background: #222;
   }
   .primary, #reply-control, .bootbox.modal,
   .topic-list .topic-list-item-separator td span,
@@ -267,6 +295,17 @@ url-prefix("https://www.sitepoint.com/community/") {
   .emoji-picker .results button.emoji:hover {
     background: #444 !important;
   }
+  .ring-backdrop {
+    box-shadow: 0 0 0 9999px rgba(29, 29, 29, .85);
+  }
+  .ring-backdrop-spotlight {
+    background-image: radial-gradient(40px at 50% 50%, transparent 95%, #181818 100%);
+    opacity: .1;
+  }
+  .unread-high-priority-notifications {
+    color: #222 !important;
+    background: #1ca551 !important;
+  }
   nav.post-controls .double-button:hover button, .topic-map .link-summary, .btn,
   .topic-map .link-summary .btn {
     background: #333;
@@ -300,11 +339,9 @@ url-prefix("https://www.sitepoint.com/community/") {
   }
   .btn:hover, .discourse-no-touch .btn:hover, .discourse-no-touch .btn.btn-hover {
     background: #444;
+    color: #ccc;
   }
-  .btn[disabled], .btn.disabled {
-    background: #404040;
-  }
-  .btn[disabled]:hover, .btn.disabled:hover,
+  .btn[disabled], .btn.disabled, .btn[disabled]:hover, .btn.disabled:hover,
   .discourse-no-touch .btn[disabled]:hover,
   .modal.history-modal #revision-controls .btn[disabled],
   .modal.history-modal #revision-controls .btn[disabled]:hover {
@@ -322,7 +359,10 @@ url-prefix("https://www.sitepoint.com/community/") {
   .post-links-container ul li a[href], .fps-result .blurb,
   .fps-result .blurb .date,
   .select-kit.combo-box.category-chooser .select-kit-row .topic-count,
-  .category-description, .select-kit .d-icon {
+  .category-description, .select-kit .d-icon,
+  .select-kit.dropdown-select-box.period-chooser .period-chooser-row .top-date-string,
+  .select-kit.dropdown-select-box.period-chooser .period-chooser-header h2.selected-name .top-date-string,
+  .categories-list .category .category-description {
     color: #aaa;
   }
   .badge-posts[href], .latest-topic-list-item .topic-last-activity a {
@@ -373,7 +413,9 @@ url-prefix("https://www.sitepoint.com/community/") {
   .latest-topic-list .table-heading,
   .timeline-container .topic-timeline .start-date,
   .timeline-container .topic-timeline .now-date, .btn .d-icon,
-  .topic-map .buttons .btn:hover .d-icon, html, .pika-table th {
+  .topic-map .buttons .btn:hover .d-icon, html, .pika-table th,
+  .ring-first-notification, .discourse-no-touch .btn:hover .d-icon,
+  .discourse-no-touch .btn.btn-hover .d-icon {
     color: #ccc; /* not important */
   }
   .title, .alert, #banner, #site-text-logo, .alert.alert-info,
@@ -393,13 +435,30 @@ url-prefix("https://www.sitepoint.com/community/") {
   a.hashtag:visited, a.hashtag:hover, .category-box-heading a[href],
   .topic-list th, td,
   .select-kit .select-kit-row.is-highlighted .top-date-string, .topics .value,
-  .topics .unit {
+  .topics .unit,
+  .btn:not(.btn-primary):not(.btn-danger):not(.widget-button):not(.btn-flat):not(.period-chooser-header),
+  .btn:not(.btn-primary):not(.btn-danger):not(.widget-button):not(.btn-flat):not(.period-chooser-header):active,
+  .btn:not(.btn-primary):not(.btn-danger):not(.widget-button):not(.btn-flat):not(.period-chooser-header):active:hover,
+  .btn:not(.btn-primary):not(.btn-danger):not(.widget-button):not(.btn-flat):not(.period-chooser-header).btn-active,
+  .btn-default:not(.period-chooser-header),
+  .btn-default:not(.period-chooser-header):active,
+  .btn-default:not(.period-chooser-header):active:hover,
+  .btn-default:not(.period-chooser-header).btn-active {
     color: #ccc !important;
   }
   #user-card h3, #group-card h3, .menu-panel b.topics-count, .topic-map h3,
   #user-card .metadata h3 .desc, #user-card .metadata h3 a,
   #group-card .metadata h3 .desc, #group-card .metadata h3 a,
-  .drop-down-mode .d-header-icons .active .icon .d-icon {
+  .drop-down-mode .d-header-icons .active .icon .d-icon,
+  div.menu-links-header .fa, div.menu-links-header a, .search-link .blurb,
+  .btn:not(.btn-primary):not(.btn-danger):not(.widget-button):not(.btn-flat):not(.period-chooser-header) .d-icon,
+  .btn:not(.btn-primary):not(.btn-danger):not(.widget-button):not(.btn-flat):not(.period-chooser-header):active .d-icon,
+  .btn:not(.btn-primary):not(.btn-danger):not(.widget-button):not(.btn-flat):not(.period-chooser-header):active:hover .d-icon,
+  .btn:not(.btn-primary):not(.btn-danger):not(.widget-button):not(.btn-flat):not(.period-chooser-header).btn-active .d-icon,
+  .btn-default:not(.period-chooser-header) .d-icon,
+  .btn-default:not(.period-chooser-header):active .d-icon,
+  .btn-default:not(.period-chooser-header):active:hover .d-icon,
+  .btn-default:not(.period-chooser-header).btn-active .d-icon {
     color: #ddd;
   }
   aside.quote .title {
@@ -437,7 +496,7 @@ url-prefix("https://www.sitepoint.com/community/") {
   .drop-down-mode .d-header-icons .active .icon:after {
     border-color: #222 !important;
   }
-  .topic-list > tbody, tbody, .table-heading, .topic-list th, .topic-list td {
+  .topic-list > tbody, tbody, .table-heading, .topic-list th {
     border-color: #333;
   }
   hr, .d-header, .d-header .title, .modal-header, .modal-footer, .topic-avatar,
@@ -461,7 +520,9 @@ url-prefix("https://www.sitepoint.com/community/") {
   .login-modal #login-buttons:not(.hidden),
   .create-account #login-buttons:not(.hidden), .autocomplete ul li,
   .modal.history-modal #revision, #topic-closing-info,
-  .topic-list > tbody > tr:first-of-type, .topic-list > tbody > tr {
+  .topic-list > tbody > tr:first-of-type, .topic-list > tbody > tr,
+  .topic-list td, div.menu-links-header .menu-links-row,
+  div.menu-links-header .menu-links-row li a.active {
     border-color: #444;
   }
   .topic-list > tbody > tr:first-of-type {
@@ -473,8 +534,9 @@ url-prefix("https://www.sitepoint.com/community/") {
   .topic-map .topic-links tr {
     border: none;
   }
-  aside.onebox {
-    border-color: rgba(68, 68, 68, .2) !important;
+  aside.onebox, #community-ad {
+    border-color: rgba(68, 68, 68, .2);
+    background: #111;
   }
   #reply-control, .badge-category-bg, .badge-category-parent-bg, #copyright {
     border: 1px solid #444 !important;
@@ -709,10 +771,10 @@ url-prefix("https://www.sitepoint.com/community/") {
   }
   @keyframes background-fade-highlight {
     0% {
-      background-color: #333 !important;
+      background-color: #333;
     }
     100% {
-      background-color: transparent !important;
+      background-color: transparent;
     }
   }
 }
