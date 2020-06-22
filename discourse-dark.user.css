@@ -920,6 +920,29 @@ url-prefix("https://www.sitepoint.com/community/") {
     border-right: solid 1px #444;
   }
 }
+@-moz-document regexp("^https://github.community/(?!embed/comments).*$") {
+  .about .details .primary, .user-main .about .details, .user-main .user-content {
+    background: none !important;
+  }
+  .custom-feedback-button {
+    background: #444;
+    color: #eee;
+  }
+  .discourse-no-touch .custom-feedback-button:hover {
+    background: #777;
+    color: #fff;
+  }
+  .octicon.octicon-mark-github {
+    fill: #ccc;
+  }
+  #site-logo {
+    opacity: .9;
+  }
+  .user-stream .item, .user-stream .user-stream-item {
+    background-color: transparent !important;
+    border-bottom-color: #444 !important;
+  }
+}
 @-moz-document regexp("^https://(discourse)\.mozilla\.org/(?!embed/comments).*$") {
   .badge-category-bg, .badge-category-parent-bg {
     border: 0 !important;
