@@ -162,7 +162,8 @@ url-prefix("https://www.sitepoint.com/community/") {
   .menu-panel li.heading a.categories-link .d-icon,
   nav.post-controls .actions button.create .d-icon,
   .user-menu .quick-access-panel li span:first-child,
-  .select-kit.dropdown-select-box .select-kit-row .texts .name {
+  .select-kit.dropdown-select-box .select-kit-row .texts .name,
+  .user-menu .quick-access-panel.quick-access-profile li:not(.show-all) a {
     color: #ccc;
   }
   nav.post-controls .actions button.d-hover,
