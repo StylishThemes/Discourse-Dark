@@ -178,7 +178,8 @@ url-prefix("https://www.sitepoint.com/community/") {
   .user-menu .quick-access-panel .read, .select-kit.multi-select {
     background: #111;
   }
-  div.menu-links-header .menu-links-row {
+  div.menu-links-header .menu-links-row,
+  .user-content .user-notifications-filter-select-kit {
     border-color: #444;
   }
   div.menu-links-header .menu-links-row li a.active,
