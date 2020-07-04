@@ -902,6 +902,10 @@ url-prefix("https://www.sitepoint.com/community/") {
       background-color: transparent;
     }
   }
+  /* hack to fix upstream bug in avatar selector */
+  .avatar-selector.modal-body {
+    overflow: hidden;
+  }
 }
 @-moz-document regexp("^https://docs\.spongepowered\.org/(?!embed/comments).*$") {
   .input-group-addon {
