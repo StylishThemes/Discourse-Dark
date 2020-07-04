@@ -111,6 +111,9 @@ url-prefix("https://www.sitepoint.com/community/") {
   .title img[src*="b0f0eca7da0011fb8ff89afbd3a6ef73f910399a.png"]#site-logo {
     filter: invert(100%) hue-rotate(180deg) brightness(70%) !important;
   }
+  .d-header-icons .unread-notifications {
+    background-color: var(--base-color);
+  }
   .placeholder-animation {
     animation-duration: 4s;
     animation-fill-mode: forwards;
@@ -163,7 +166,8 @@ url-prefix("https://www.sitepoint.com/community/") {
     color: #ccc;
   }
   nav.post-controls .actions button.d-hover,
-  nav.post-controls .actions button:focus {
+  nav.post-controls .actions button:focus,
+  nav.post-controls .actions .double-button:hover button {
     background: #444;
     color: #eee !important;
   }
@@ -239,19 +243,21 @@ url-prefix("https://www.sitepoint.com/community/") {
   .select-kit.dropdown-select-box.composer-actions .select-kit-header:focus {
     background: #333;
   }
-  code, pre code, p > code, .message, #reply-control input,
-  #reply-control textarea, #reply-control select, #reply-control .tag-chooser,
-  .modal-inner-container, .select2-drop, .select-kit-body,
-  .select-box-kit-header, .select-kit-collection, .select-box-kit-collection,
-  .select-kit .select-kit-collection, .select-kit-filter, .select-box-kit-filter,
-  .d-editor-textarea-wrapper, .user-preferences .bio-composer, div.ac-wrap,
-  #sticky-footer, .feedback-popup,
+  .message, #reply-control input, #reply-control textarea, #reply-control select,
+  #reply-control .tag-chooser, .modal-inner-container, .select2-drop,
+  .select-kit-body, .select-box-kit-header, .select-kit-collection,
+  .select-box-kit-collection, .select-kit .select-kit-collection,
+  .select-kit-filter, .select-box-kit-filter, .d-editor-textarea-wrapper,
+  .user-preferences .bio-composer, div.ac-wrap, #sticky-footer, .feedback-popup,
   .d-header .sp-logo-container > .sp-logo-menu > .sp-logo-dropdown,
   .d-header .sp-logo-container > .sp-logo-menu > .sp-logo-dropdown li,
   #sp-logo-dropdown {
     background: #222 !important;
     color: #ddd !important;
     border-color: #444 !important;
+  }
+  code, pre code, p > code, .hljs {
+    background: #191919;
   }
   .category-breadcrumb .single-select .select-kit-header,
   #topic-footer-buttons .single-select .select-kit-header {
@@ -276,6 +282,12 @@ url-prefix("https://www.sitepoint.com/community/") {
   }
   #sp-logo-dropdown .active a {
     color: #333 !important;
+  }
+  .quote-button {
+    background: #333;
+  }
+  .quote-button:hover {
+    background-color: #555;
   }
   blockquote, aside.quote > div, aside.quote > blockquote, a.mention,
   a.mention-group, .menu-panel, .emoji-picker, .composer-popup,
@@ -423,8 +435,11 @@ url-prefix("https://www.sitepoint.com/community/") {
   /* syntax theme */
   .hljs-subst,
   .hljs-request, .hljs-status, .hljs-keyword, .javascript .hljs-title,
-  .nginx .hljs-title {
-    color: #aaa !important;
+  .nginx .hljs-title, .hljs {
+    color: #aaa;
+  }
+  .hljs-string, .hljs-tag .hljs-string, .tex .hljs-formula {
+    color: #d14;
   }
   input, select, textarea, .fps-result .blurb .search-highlight,
   .user-navigation .nav-stacked a.active,
@@ -552,6 +567,13 @@ url-prefix("https://www.sitepoint.com/community/") {
   /* syntax theme */
   .hljs-tag, .hljs-tag .hljs-title, .django .hljs-tag .hljs-keyword {
     color: #777 !important;
+  }
+  .hljs-tag, .hljs-name, .hljs-attribute {
+    color: #4040ff;
+  }
+  .hljs-number, .hljs-literal, .hljs-variable, .hljs-template-variable,
+  .hljs-tag .hljs-attr {
+    color: #12bfbf;
   }
   .emoji-picker .diversity-picker .d-icon {
     color: #333 !important;
@@ -1008,6 +1030,13 @@ url-prefix("https://www.sitepoint.com/community/") {
   .user-stream .item, .user-stream .user-stream-item {
     background-color: transparent !important;
     border-bottom-color: #444 !important;
+  }
+  nav.post-controls .actions button, .btn {
+    border-radius: .25em;
+  }
+  nav.post-controls .show-replies:hover, nav.post-controls .show-replies.d-hover {
+    border-radius: .25em;
+    color: #eee !important;
   }
 }
 @-moz-document regexp("^https://(discourse)\.mozilla\.org/(?!embed/comments).*$") {
