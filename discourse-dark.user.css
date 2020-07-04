@@ -290,6 +290,9 @@ url-prefix("https://www.sitepoint.com/community/") {
     color: #aaa !important;
     border-color: #444 !important;
   }
+  .user-stream .excerpt {
+    color: #ccc;
+  }
   .user-menu .quick-access-panel {
     border-top-color: #444;
   }
