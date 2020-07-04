@@ -175,7 +175,7 @@ url-prefix("https://www.sitepoint.com/community/") {
   .user-menu .quick-access-panel li {
     background: #182030;
   }
-  .user-menu .quick-access-panel .read {
+  .user-menu .quick-access-panel .read, .select-kit.multi-select {
     background: #111;
   }
   div.menu-links-header .menu-links-row {
