@@ -18,7 +18,7 @@
 * See the [known list](https://github.com/StylishThemes/Discourse-Dark/wiki) of websites where this dark theme works. Let us know if we need to add more.
 
 ## Preview
-![](./images/Atom-after.png)
+![preview](./images/Atom-after.png)
 
 ## Installation
 
@@ -40,11 +40,11 @@ In order to use default dark sites do:
 
 1. Goto  **Preferences** > Interface
 1. Under Themes select Dark
-1. Press save
+1. Press [ Save Changes ]
 
 You should see 💥
 
-![](./images/Dark-theme.png)
+![dark-theme](./images/Dark-theme.png)
 
 > 💥 Note design shown on screenshot may vary on some sites.
 
