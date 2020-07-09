@@ -259,7 +259,10 @@ url-prefix("https://www.sitepoint.com/community/") {
     border-color: #444 !important;
   }
   code, pre code, p > code, .hljs {
-    background: #191919;
+    background: #111;
+  }
+  p > code, li > code, pre > code {
+    color: #ddd;
   }
   .category-breadcrumb .single-select .select-kit-header,
   #topic-footer-buttons .single-select .select-kit-header {
@@ -1021,6 +1024,13 @@ url-prefix("https://www.sitepoint.com/community/") {
 @-moz-document regexp("^https://github.community/(?!embed/comments).*$") {
   .about .details .primary, .user-main .about .details, .user-main .user-content {
     background: none !important;
+  }
+  .blog-category-navigation .category-heading .category-description,
+  .blog-list-item .excerpt, .blog-list-item .avatar-container .name-and-date a {
+    color: #bbb;
+  }
+  .blog-list-item, .blog-list-item .meta-container {
+    border-color: #444;
   }
   .custom-feedback-button {
     background: #444;
