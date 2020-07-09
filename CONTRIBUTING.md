@@ -66,7 +66,6 @@ If you don't know CSS very well and have found a missing style, please include a
     ·property: value;
     ```
 
-* Try to wrap lines at around 80 characters.
 * Try to limit the style size:
   * Don't add any image URI's to the CSS; instead add the image into the `/images` directory; then point to using the following URL: `http://stylishthemes.github.io/Discourse-Dark/images/`{my-image.png}.
   * If possible, reduce any added selectors. Remember that Stylus requires an `!important` flag to override default styling, so a selector starting from the body isn't always necessary.
@@ -100,11 +99,14 @@ If you don't know CSS very well and have found a missing style, please include a
 * `npm run clean`: Runs the perfectionist script & cleans up after it.
 * `npm run eslint`: Lint the JavaScript code in the `tools` directory.
 * `npm run lint`: Run eslint & stylelint scripts.
-* `npm run major`: Creates a semantic major release.
-* `npm run minor`: Creates a semantic minor release.
-* `npm run patch`: Creates a semantic patch release.
 * `npm run perfectionist`: Runs perfectionist only. CSS is not cleaned!
 * `npm run stylelint`: Run stylelint on the CSS file.
 * `npm run test`: Same as `npm run lint`.
 * `npm run update`: Update development dependencies.
 * `npm run usercss`: Update usercss variables using usercss template; variable data obtained from `defaults.json`.
+
+### Internal developemnt scrips (not for pull requests)
+
+* `npm run major`: Creates a semantic major release.
+* `npm run minor`: Creates a semantic minor release.
+* `npm run patch`: Creates a semantic patch release.
