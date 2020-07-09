@@ -31,6 +31,26 @@ Then:
 
 📦 [Install the usercss](https://github.com/StylishThemes/Discourse-Dark/raw/master/discourse-dark.user.css) with Stylus or xStyle. Supports automatic updates.
 
+## Using Discourse type built in dark themes
+
+Many of the sites supported, have for a while been able to swich to dark versions, this is a per site setting.
+By no means there is a list of said sites, if you're wondering if a site you visit supports it, continue reading.
+
+In order to use default dark sites do:
+
+1. Goto  **Preferences** > Interface
+1. Under Themes select Dark
+1. Press save
+
+You should see 💥
+
+![](./images/Dark-theme.png)
+
+> 💥 Note design shown on screenshot may vary on some sites.
+
+We do not suport bug issues to this style while using the native dark style,
+You should not enable this style, while using the built in dark themes.
+
 ## Contributions
 
 1. 👓 Read the [contribution guidelines](./CONTRIBUTING.md).
