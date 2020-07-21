@@ -445,6 +445,8 @@ url-prefix("https://www.sitepoint.com/community/") {
   .topic-map .participants .user .group-link {
     color: #bbb;
   }
+  .select-kit .select-kit-row.is-highlighted:hover .badge-category {
+    color: #eee !important;
   }
   .hljs-string, .hljs-tag .hljs-string, .tex .hljs-formula {
     color: #d14;
