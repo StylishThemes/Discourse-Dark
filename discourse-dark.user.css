@@ -41,7 +41,7 @@
 @preprocessor uso
 ==/UserStyle== */
 @-moz-document regexp("^https://(forum|forums)\.(balena|infamous|sentry|snapcraft)\.io/(?!embed/comments).*$"),
-regexp("^https://community\\.(signalusers|gitpod|home-assistant|influxdata|grafana|transifex|thunkable|letsencrypt|cloudflare|bitwarden|bevoya)\\.(com|org|io)/(?!embed/comments).*$"),
+regexp("^https://community\\.(roonlabs|signalusers|gitpod|home-assistant|influxdata|grafana|transifex|thunkable|letsencrypt|cloudflare|bitwarden|bevoya)\\.(com|org|io)/(?!embed/comments).*$"),
 regexp("^https://(forum|forums)\\.(gitlab|ionicframework|woot|urbackup|swift|meteor|vuejs|talksurf|sublimetext|docker|mattermost|manjaro|level1techs|keyboardmaestro|ionicframeworitlab|f-droid|breadtopia|endeavouros)\\.(com|org)/(?!embed/comments).*$"),
 regexp("^https://(docs|forums)\.spongepowered\.org/(?!embed/comments).*$"),
 regexp("^https://(meta|talk)\.(discourse|commonmark)\.org/(?!embed/comments).*$"),
@@ -1182,11 +1182,13 @@ domain("discourse.huel.com"),
 domain("discuss.huel.com"),
 domain("discuss.ocaml.org"),
 domain("forum.f-droid.org"),
+domain("community.roonlabs.com"),
 domain("community.gitpod.io") {
   #site-logo.logo-big, #site-logo.logo-small {
     filter: invert(100%) hue-rotate(180deg) brightness(.9) !important;
   }
   img[src*="6afef9981af88307eaf8519944c896e5c9a42245.png"],
+  img[src*="0aebd8c498737ebb12d34a98771b66d978278595.png"],
   img[src*="f010ba1908e9f8f5e6b7a8d1792106b4fcbcd2c9.png"] {
     filter: invert(1) contrast(70%) brightness(.9);
   }
