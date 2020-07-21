@@ -411,6 +411,11 @@ url-prefix("https://www.sitepoint.com/community/") {
   .small-action .small-action-desc.timegap, .small-action .small-action-desc {
     color: #777;
   }
+  /* syntax theme */
+  .hljs-subst, .hljs-request, .hljs-status, .hljs-keyword,
+  .javascript .hljs-title, .nginx .hljs-title, .hljs {
+    color: #aaa;
+  }
   .group-info .group-info-full-name,
   .groups-table .groups-info .groups-info-title, .topic-meta-data .post-info a,
   .timeline-container .topic-timeline .timeline-ago, #login-form a,
@@ -422,7 +427,13 @@ url-prefix("https://www.sitepoint.com/community/") {
   .category-description, .select-kit .d-icon,
   .select-kit.dropdown-select-box.period-chooser .period-chooser-row .top-date-string,
   .select-kit.dropdown-select-box.period-chooser .period-chooser-header h2.selected-name .top-date-string,
-  .categories-list .category .category-description {
+  .categories-list .category .category-description, .user-preferences .static,
+  .discourse-tag.simple, .discourse-tag.simple:hover,
+  .discourse-tag.simple:visited, .modal.history-modal .diff-ins,
+  body .extra-info-wrapper .discourse-tag, .d-header .icons .active .icon:hover,
+  .drop-down-visible .d-header .icons .active .icon:hover,
+  .topic-list .topic-excerpt, .stats-section li.linked-stat a,
+  .user-main .about .secondary dd {
     color: #aaa;
   }
   .badge-posts[href], .latest-topic-list-item .topic-last-activity a,
@@ -434,17 +445,6 @@ url-prefix("https://www.sitepoint.com/community/") {
   .topic-map .participants .user .group-link {
     color: #bbb;
   }
-  .user-preferences .static, .discourse-tag.simple, .discourse-tag.simple:hover,
-  .discourse-tag.simple:visited, .modal.history-modal .diff-ins,
-  body .extra-info-wrapper .discourse-tag, .d-header .icons .active .icon:hover,
-  .drop-down-visible .d-header .icons .active .icon:hover,
-  .topic-list .topic-excerpt, .stats-section li.linked-stat a,
-  .user-main .about .secondary dd,
-  /* syntax theme */
-  .hljs-subst,
-  .hljs-request, .hljs-status, .hljs-keyword, .javascript .hljs-title,
-  .nginx .hljs-title, .hljs {
-    color: #aaa;
   }
   .hljs-string, .hljs-tag .hljs-string, .tex .hljs-formula {
     color: #d14;
