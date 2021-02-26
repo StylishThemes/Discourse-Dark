@@ -45,7 +45,7 @@ regexp("^https://community\\.(roonlabs|signalusers|gitpod|home-assistant|influxd
 regexp("^https://(forum|forums)\\.(gitlab|ionicframework|woot|urbackup|swift|meteor|vuejs|talksurf|sublimetext|docker|mattermost|manjaro|level1techs|keyboardmaestro|ionicframeworitlab|f-droid|breadtopia|endeavouros)\\.(com|org)/(?!embed/comments).*$"),
 regexp("^https://(docs|forums)\.spongepowered\.org/(?!embed/comments).*$"),
 regexp("^https://(meta|talk)\.(discourse|commonmark)\.org/(?!embed/comments).*$"),
-regexp("^https://discuss\\.(rubyonrails|atom|codemirror|elastic|flexget|huel|ocaml)\\.(io|org|co|com|net)/(?!embed/comments).*$"),
+regexp("^https://discuss\\.(rubyonrails|atom|codemirror|elastic|flexget|huel|ocaml|cocos2d-x)\\.(io|org|co|com|net)/(?!embed/comments).*$"),
 regexp("^https://(forum|forums)\.(syncthing|habitat|puri|sonarr|cfx)\.(net|sh|sm|tv|re)/(?!embed/comments).*$"),
 regexp("^https://(\w+\.ruby-forum|zegist)\.com/(?!embed/comments).*$"),
 regexp("^https://nomadlist.com/(?!embed/comments).*$"),
