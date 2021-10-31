@@ -58,6 +58,7 @@ domain("education.github.community"),
 domain("ubuntu-mate.community"),
 domain("users.rust-lang.org"),
 domain("talk.makeict.org"),
+domain("caddy.community"),
 url-prefix("https://www.freecodecamp.org/forum/"),
 url-prefix("https://www.sitepoint.com/community/") {
   :root {
