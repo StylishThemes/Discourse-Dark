@@ -1,3 +1,5 @@
+### :warning: This project is currently not maintained. Discourse has implemented their own Dark Mode which can be tried out at https://try.discourse.org/.
+
 <p align="center">
   <img alt="discoursedark-logo" src="https://rawgit.com/StylishThemes/logos/master/discourse.dark/discoursedark.svg" width="580">
   <br>
