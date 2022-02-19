@@ -1,6 +1,6 @@
-### :warning: NOTICE This project is currently not maintained, [looking for contributors](https://github.com/StylishThemes/Discourse-Dark/issues/42). 
-
-> NOTE: Discourse has implemented native Dark Mode which can be tried out at https://try.discourse.org/.
+<h3 align="center">:warning: NOTICE This project is currently not maintained,
+  <a href="https://github.com/StylishThemes/Discourse-Dark/issues/42">looking for contributors</a>
+</h3>
 
 <p align="center">
   <img alt="discoursedark-logo" src="https://rawgit.com/StylishThemes/logos/master/discourse.dark/discoursedark.svg" width="580">
