@@ -1,3 +1,5 @@
+**Retired:** Discourse has built-in dark color schemes now.
+
 <h3 align="center">:warning: NOTICE This project is currently not maintained,
   <a href="https://github.com/StylishThemes/Discourse-Dark/issues/42">looking for contributors</a>
 </h3>
